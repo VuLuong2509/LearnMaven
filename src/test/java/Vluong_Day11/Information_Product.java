@@ -1,6 +1,7 @@
 package Vluong_Day11;
 
 import java.io.File;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -36,6 +37,23 @@ public class Information_Product extends CommonService{
 	public void TC_010InforItemWomen() {	
         test = extent.createTest("TC_010InforItemWomen");
 		Pinfor.access_URL(test);
+		
+		//closeAds
+		String title = "AdBlock is now installed!";
+		String CntWin = driver.getWindowHandle();
+		Set<String> windows = driver.getWindowHandles();
+		
+		for (String str : windows) {
+			driver.switchTo().window(str); 
+			System.out.println(str);
+			if (driver.getTitle().equalsIgnoreCase(title)) {
+				driver.switchTo().window(str);
+				driver.close();
+			}			
+		}		
+		driver.switchTo().window(CntWin);
+		//
+		
 		Pinfor.access_linkProduct(test);
 		Pinfor.access_ProductDressWM(test);
 		Pinfor.access_ProductD1(test);

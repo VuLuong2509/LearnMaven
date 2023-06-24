@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Random;
+import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
@@ -13,6 +14,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import com.aventstack.extentreports.ExtentTest;
 
@@ -62,7 +64,7 @@ public class CommonFunc {
 	public void element_sendkey(WebDriver driver, ExtentTest test, String xpath, String data) {
 		WebElement ele_sendkey = driver.findElement(By.xpath(xpath));
 		ele_sendkey.sendKeys(data);
-		test.info("Enter Email: "+ ele_sendkey.getAttribute("value"));
+		test.info( ele_sendkey.getAttribute("value" + "Enter: "));
 	}
 	
 	public String getAttributeValues(WebDriver driver, String xpath, String attributeName) {
@@ -77,5 +79,13 @@ public class CommonFunc {
 		js.executeScript("arguments[0].click();", element_click);
 		
 	}
+	
+	public void element_select(WebDriver driver, ExtentTest test, String xpath, Integer values) {
+		WebElement select = driver.findElement(By.xpath(xpath));
+		Select Select_ele = new Select(select);
+		Select_ele.selectByIndex(values);
+	}
+	
+
 
 }

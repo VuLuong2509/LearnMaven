@@ -1,8 +1,11 @@
 package Commons;
 
 import java.io.File;
+import java.util.Set;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -27,12 +30,11 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 public class CommonService {
 	public static WebDriver driver = null;
 	public static ExtentReports extent;
-	public static ExtentTest test;
+	public static ExtentTest test = null;
 	public static CommonFunc Func = new CommonFunc();
 	@BeforeTest
 	@Parameters({"browser"})
 	public WebDriver Rundriver(String browser) {
-		
 		extent = new ExtentReports();
         ExtentSparkReporter spark = new ExtentSparkReporter("./Report/AutoReport_" +browser+".html");
         extent.attachReporter(spark);
@@ -54,10 +56,32 @@ public class CommonService {
 			driver = new EdgeDriver();
 		}
 		
-		driver.manage().window().maximize();		
+		driver.manage().window().maximize();
+//		String title = "AdBlock is now installed!";
+//		String CntWin = driver.getWindowHandle();
+//		Set<String> windows = driver.getWindowHandles();
+//		
+//		for (String str : windows) {
+//			driver.switchTo().window(str); 
+//			System.out.println(str);
+//			if (driver.getTitle().equalsIgnoreCase(title)) {
+//				driver.switchTo().window(str);
+//				driver.close();
+//			}			
+//		}
+//		try {
+//			Thread.sleep(2500);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		driver.switchTo().window(CntWin);
 		return driver;				
 	}
-	
+
+
+
+
 	@AfterMethod
 	public void saveAttachment() {
 		test.info(MediaEntityBuilder.createScreenCaptureFromPath(Func.screenShot(driver)).build());
@@ -65,7 +89,7 @@ public class CommonService {
 	}
 	@AfterTest
 	public void AfterRun() {
-		driver.quit();
+//		driver.quit();
 	}
 	
 	

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="34023" started-at="2023-06-21T19:23:20 ICT" finished-at="2023-06-21T19:23:55 ICT">
+  <suite name="Suite1" duration-ms="16344" started-at="2023-06-24T18:16:10 ICT" finished-at="2023-06-24T18:16:27 ICT">
     <groups>
     </groups>
-    <test name="RunCC" duration-ms="34023" started-at="2023-06-21T19:23:20 ICT" finished-at="2023-06-21T19:23:55 ICT">
+    <test name="RunCC" duration-ms="16344" started-at="2023-06-24T18:16:10 ICT" finished-at="2023-06-24T18:16:27 ICT">
       <class name="Vluong_Day11.RegisterUser">
-        <test-method status="PASS" signature="Rundriver(java.lang.String)[pri:0, instance:Vluong_Day11.RegisterUser@51c8530f]" name="Rundriver" is-config="true" duration-ms="4867" started-at="2023-06-21T19:23:20 ICT" finished-at="2023-06-21T19:23:25 ICT">
+        <test-method status="PASS" signature="Rundriver(java.lang.String)[pri:0, instance:Vluong_Day11.RegisterUser@51c8530f]" name="Rundriver" is-config="true" duration-ms="5027" started-at="2023-06-24T18:16:10 ICT" finished-at="2023-06-24T18:16:15 ICT">
           <params>
             <param index="0">
               <value>
@@ -18,31 +18,139 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Rundriver -->
-        <test-method status="PASS" signature="initdata()[pri:0, instance:Vluong_Day11.RegisterUser@51c8530f]" name="initdata" is-config="true" duration-ms="1" started-at="2023-06-21T19:23:25 ICT" finished-at="2023-06-21T19:23:25 ICT">
+        <test-method status="PASS" signature="initdata()[pri:0, instance:Vluong_Day11.RegisterUser@51c8530f]" name="initdata" is-config="true" duration-ms="1" started-at="2023-06-24T18:16:15 ICT" finished-at="2023-06-24T18:16:15 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initdata -->
-        <test-method status="PASS" signature="TC_001RegisterNewUser()[pri:0, instance:Vluong_Day11.RegisterUser@51c8530f]" name="TC_001RegisterNewUser" duration-ms="10903" started-at="2023-06-21T19:23:25 ICT" finished-at="2023-06-21T19:23:36 ICT">
+        <test-method status="FAIL" signature="TC_001RegisterNewUser()[pri:0, instance:Vluong_Day11.RegisterUser@51c8530f]" name="TC_001RegisterNewUser" duration-ms="7" started-at="2023-06-24T18:16:15 ICT" finished-at="2023-06-24T18:16:15 ICT">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at Commons.CommonFunc.open_url(CommonFunc.java:54)
+at baseObjects.Page_Register.access_Page(Page_Register.java:63)
+at Vluong_Day11.RegisterUser.TC_001RegisterNewUser(RegisterUser.java:41)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_001RegisterNewUser -->
-        <test-method status="PASS" signature="saveAttachment()[pri:0, instance:Vluong_Day11.RegisterUser@51c8530f]" name="saveAttachment" is-config="true" duration-ms="3040" started-at="2023-06-21T19:23:36 ICT" finished-at="2023-06-21T19:23:39 ICT">
+        <test-method status="PASS" signature="saveAttachment()[pri:0, instance:Vluong_Day11.RegisterUser@51c8530f]" name="saveAttachment" is-config="true" duration-ms="3039" started-at="2023-06-24T18:16:15 ICT" finished-at="2023-06-24T18:16:18 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- saveAttachment -->
-        <test-method status="PASS" signature="TC_002RegisterNewUserWithExistingEmail()[pri:0, instance:Vluong_Day11.RegisterUser@51c8530f]" name="TC_002RegisterNewUserWithExistingEmail" duration-ms="11705" started-at="2023-06-21T19:23:39 ICT" finished-at="2023-06-21T19:23:51 ICT">
+        <test-method status="FAIL" signature="TC_002RegisterNewUserWithExistingEmail()[pri:0, instance:Vluong_Day11.RegisterUser@51c8530f]" name="TC_002RegisterNewUserWithExistingEmail" duration-ms="5371" started-at="2023-06-24T18:16:18 ICT" finished-at="2023-06-24T18:16:24 ICT">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/logout']"}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_361'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [385dae7cdd8a371bcd96ba431b311137, findElement {using=xpath, value=//a[@href='/logout']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VuLuong\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63897}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63897/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 385dae7cdd8a371bcd96ba431b311137]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/logout']"}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_361'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [385dae7cdd8a371bcd96ba431b311137, findElement {using=xpath, value=//a[@href='/logout']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VuLuong\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63897}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63897/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 385dae7cdd8a371bcd96ba431b311137
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at Commons.CommonFunc.element_click(CommonFunc.java:59)
+at baseObjects.Page_Register.click_logout(Page_Register.java:162)
+at Vluong_Day11.RegisterUser.TC_002RegisterNewUserWithExistingEmail(RegisterUser.java:70)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_002RegisterNewUserWithExistingEmail -->
-        <test-method status="PASS" signature="initdata()[pri:0, instance:Vluong_Day11.RegisterUser@51c8530f]" name="initdata" is-config="true" duration-ms="0" started-at="2023-06-21T19:23:39 ICT" finished-at="2023-06-21T19:23:39 ICT">
+        <test-method status="PASS" signature="initdata()[pri:0, instance:Vluong_Day11.RegisterUser@51c8530f]" name="initdata" is-config="true" duration-ms="0" started-at="2023-06-24T18:16:18 ICT" finished-at="2023-06-24T18:16:18 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initdata -->
-        <test-method status="PASS" signature="saveAttachment()[pri:0, instance:Vluong_Day11.RegisterUser@51c8530f]" name="saveAttachment" is-config="true" duration-ms="2762" started-at="2023-06-21T19:23:51 ICT" finished-at="2023-06-21T19:23:54 ICT">
+        <test-method status="PASS" signature="saveAttachment()[pri:0, instance:Vluong_Day11.RegisterUser@51c8530f]" name="saveAttachment" is-config="true" duration-ms="2874" started-at="2023-06-24T18:16:24 ICT" finished-at="2023-06-24T18:16:27 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- saveAttachment -->
-        <test-method status="PASS" signature="AfterRun()[pri:0, instance:Vluong_Day11.RegisterUser@51c8530f]" name="AfterRun" is-config="true" duration-ms="717" started-at="2023-06-21T19:23:54 ICT" finished-at="2023-06-21T19:23:55 ICT">
+        <test-method status="PASS" signature="AfterRun()[pri:0, instance:Vluong_Day11.RegisterUser@51c8530f]" name="AfterRun" is-config="true" duration-ms="0" started-at="2023-06-24T18:16:27 ICT" finished-at="2023-06-24T18:16:27 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterRun -->
