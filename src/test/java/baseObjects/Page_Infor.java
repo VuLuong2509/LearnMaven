@@ -27,8 +27,10 @@ public class Page_Infor {
 			
 			CommonFunc func = new CommonFunc();
 			WebDriver local_driver;
-			public Page_Infor(WebDriver driver) {
+			ExtentTest local_test;
+			public Page_Infor(WebDriver driver, ExtentTest test) {
 				local_driver = driver;
+				local_test = test;
 				try {
 					Thread.sleep(2500);
 				} catch (InterruptedException e) {
@@ -37,13 +39,13 @@ public class Page_Infor {
 				}
 			}
 			
-			public void access_URL(ExtentTest test) {
-				func.open_url(local_driver, test, URL);
+			public void access_URL() {
+				func.open_url(local_driver, local_test, URL);
 				
 			}
 			
-			public void access_linkProduct(ExtentTest test) {
-				func.element_click(local_driver, test, xpathLinkProduct);		
+			public void access_linkProduct() {
+				func.element_click(local_driver, local_test, xpathLinkProduct);		
 				try {
 					Thread.sleep(2500);
 				} catch (InterruptedException e) {
@@ -52,72 +54,72 @@ public class Page_Infor {
 				}
 			}
 			
-			public void access_ProductDressWM(ExtentTest test) {
-				func.element_click(local_driver, test, xpathDressWM);
+			public void access_ProductDressWM() {
+				func.element_click(local_driver, local_test, xpathDressWM);
 			}
 			
-			public void access_ProductD1(ExtentTest test) {
-				func.element_click(local_driver, test, xpathProD1);
+			public void access_ProductD1() {
+				func.element_click(local_driver, local_test, xpathProD1);
 			}
 			
-			public void compare_NameProduct(ExtentTest test) {
+			public void compare_NameProduct() {
 				String readdata = excel.DataExcel("./Resources/Data.xlsx", "Sheet1", 5, 1);
 				System.out.println("data is " + readdata);
 				WebElement VrfNameProduct =  local_driver.findElement(By.xpath(xpathNameProduct));
 				String Name = VrfNameProduct.getText();
 				Assert.assertEquals(Name, readdata);
 				System.out.println("Verify Name Product");
-				test.info("Product Name: " + Name);
+				local_test.info("Product Name: " + Name);
 			}
 			
-			public void compare_CateProduct(ExtentTest test) {
+			public void compare_CateProduct() {
 				String readdata1 = excel.DataExcel("./Resources/Data.xlsx", "Sheet1", 5, 2);
 				System.out.println("data is " + readdata1);
 				WebElement VrfCateProduct = local_driver.findElement(By.xpath(xpathCateProduct));
 				String Cata = VrfCateProduct.getText();
 				Assert.assertEquals(Cata, readdata1);
 				System.out.println("Verify Category Product");
-				test.info("Cate Product: " + Cata);
+				local_test.info("Cate Product: " + Cata);
 			}
 			
-			public void compare_PriceProduct(ExtentTest test) {
+			public void compare_PriceProduct() {
 				String readdata2 = excel.DataExcel("./Resources/Data.xlsx", "Sheet1", 5, 3);
 				System.out.println("data is " + readdata2);
 				WebElement VrfPriceProdct = local_driver.findElement(By.xpath(xpathPriceProduct));
 				String Price = VrfPriceProdct.getText();
 				Assert.assertEquals(Price, readdata2);
 				System.out.println("Verify Price Product");
-				test.info("Price product: " + Price);
+				local_test.info("Price product: " + Price);
 			}
 			
-			public void compare_AvailabilityProduct(ExtentTest test) {
+			public void compare_AvailabilityProduct() {
 				String readdata3 = excel.DataExcel("./Resources/Data.xlsx", "Sheet1", 5, 4);
 				System.out.println("data is " + readdata3);
 				WebElement VrfAvailabilityProduct = local_driver.findElement(By.xpath(xpathAvailabilityProduct));
 				String Availability = VrfAvailabilityProduct.getText();
 				Assert.assertEquals(Availability, readdata3);
 				System.out.println("Verify Availability Product");
-				test.info("Availability product: " + Availability);
+				local_test.info("Availability product: " + Availability);
 			}
 			
-			public void compare_ConditionProduct(ExtentTest test) {
+			public void compare_ConditionProduct() {
 				String readdata4 = excel.DataExcel("./Resources/Data.xlsx", "Sheet1", 5, 5);
 				System.out.println("data is " + readdata4);
 				WebElement VrfConditionProduct = local_driver.findElement(By.xpath(xpathConditionProduct));
 				String Condition = VrfConditionProduct.getText();
 				Assert.assertEquals(Condition, readdata4);
 				System.out.println("Verify Condition Product");
-				test.info("Condition product: " + Condition);
+				local_test.info("Condition product: " + Condition);
 			}
 			
-			public void compare_BrandProduct(ExtentTest test) {
+			public void compare_BrandProduct() {
 				String readdata5 = excel.DataExcel("./Resources/Data.xlsx", "Sheet1", 5, 6);
 				System.out.println("data is " + readdata5);
 				WebElement VrfBrandProduct = local_driver.findElement(By.xpath(xpathBrandProduct));
 				String Brand = VrfBrandProduct.getText();
 				Assert.assertEquals(Brand, readdata5);
 				System.out.println("Verify Brand Product");
-				test.info("Brand product: " + Brand);
+				local_test.info("Brand product: " + Brand);
 			}
 			
 			

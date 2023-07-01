@@ -5,9 +5,9 @@
 	<parameter name="browser"  value="Chrome"/>
     <classes>
 
-	<class name="Vluong_Day11.RegisterUser" />
-<!-- 	<class name="Vluong_Day11.LoginUser" /> -->
-	<class name="Vluong_Day11.Information_Product" />
+<!-- 	<class name="Vluong_Day11.RegisterUser" /> -->
+	<class name="Vluong_Day11.LoginUser" />
+<!-- 	<class name="Vluong_Day11.Information_Product" /> -->
 <!-- 	<class name="Vluong_Day11.AddCart" /> -->
     </classes>
   </test>

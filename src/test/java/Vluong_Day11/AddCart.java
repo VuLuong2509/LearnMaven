@@ -13,75 +13,77 @@ import org.testng.annotations.Test;
 
 import Commons.CommonFunc;
 import Commons.CommonService;
+import Commons.ManageObj;
 import baseObjects.Page_AddCart;
 import baseObjects.Page_Login;
 
 public class AddCart extends CommonService{
 	Page_AddCart PAdd;
-	@BeforeMethod
-	public void initdata() {
-		PAdd = new Page_AddCart(driver);
-	}
 	@Test
 	public void TC_011VerifySubscriptioninCartpage() {
 		test = extent.createTest("TC_011VerifySubscriptioninCartpage");
-		PAdd.access_URL(test);
-		PAdd.click_btnCart(test);
-		PAdd.click_btnContinue(test);
-		PAdd.compareMessPopup(test);
+		PAdd = ManageObj.ManageObj_PAdd_Object(driver, test);
+		PAdd.access_URL();
+		PAdd.click_btnCart();
+		PAdd.click_btnContinue();
+		PAdd.compareMessPopup();
 	}
 	@Test
 	public void TC_012VerifyMoreProductsOfTheSametype() {
 		test = extent.createTest("TC_012VerifyMoreProductsOfTheSametype");
-		PAdd.access_URL(test);
-		PAdd.click_btnCart(test);
-		PAdd.click_btnContinue(test);
-		PAdd.click_btnCart(test);
-		PAdd.compareMessPopup(test);
+		PAdd = ManageObj.ManageObj_PAdd_Object(driver, test);
+		PAdd.access_URL();
+		PAdd.click_btnCart();
+		PAdd.click_btnContinue();
+		PAdd.click_btnCart();
+		PAdd.compareMessPopup();
 	}
 	@Test
 	public void TC_013VerifyProductsQuantityInCart() {
 		test = extent.createTest("TC_013VerifyProductsQuantityInCart");
-		PAdd.access_URL(test);
-		PAdd.click_btnCart(test);
-		PAdd.click_btnContinue(test);
-		PAdd.click_btnCart(test);
-		PAdd.compareMessPopup(test);
-		PAdd.access_inCart(test);
-		PAdd.getquanlity(test);
+		PAdd = ManageObj.ManageObj_PAdd_Object(driver, test);
+		PAdd.access_URL();
+		PAdd.click_btnCart();
+		PAdd.click_btnContinue();
+		PAdd.click_btnCart();
+		PAdd.compareMessPopup();
+		PAdd.access_inCart();
+		PAdd.getquanlity();
 	}
 	@Test
 	public void TC_014VerifyRemoveProductsInCart() {
 		test = extent.createTest("TC_014VerifyRemoveProductsInCart");
-		PAdd.access_URL(test);
-		PAdd.click_btnCart(test);
-		PAdd.click_btnContinue(test);
-		PAdd.click_btnCart(test);
-		PAdd.compareMessPopup(test);
-		PAdd.access_inCart(test);
-		PAdd.Remove_Product(test);
-		PAdd.MessEmptyCart(test);
+		PAdd = ManageObj.ManageObj_PAdd_Object(driver, test);
+		PAdd.access_URL();
+		PAdd.click_btnCart();
+		PAdd.click_btnContinue();
+		PAdd.click_btnCart();
+		PAdd.compareMessPopup();
+		PAdd.access_inCart();
+		PAdd.Remove_Product();
+		PAdd.MessEmptyCart();
 	}
 	@Test
 	public void TC_015VerifyCheckOutInCart() {
 		test = extent.createTest("TC_015VerifyCheckOutInCart");
-		PAdd.access_URL(test);
-		PAdd.access_login(test);
-		PAdd.input_mail(test, "Toi@gmail.com");
-		PAdd.input_pass(test, "8438126");
-		PAdd.click_login(test);
-		PAdd.click_btnCart(test);
-		PAdd.click_btnContinue(test);
-		PAdd.access_inCart(test);
-		PAdd.click_btncheckOut(test);
-		PAdd.click_btnOrder(test);
-		PAdd.input_nameCard(test, "AutomaTion");
-		PAdd.input_numberCard(test, "1234567687");
-		PAdd.input_cvcCard(test, "234");
-		PAdd.input_MonthCard(test, "25");
-		PAdd.input_YearCard(test, "24");
-		PAdd.click_cfOrder(test);
-		PAdd.MessConfirm(test);
+		PAdd = ManageObj.ManageObj_PAdd_Object(driver, test);
+		PAdd.access_URL();
+		PAdd.access_login();
+		PAdd.input_mail("Toi@gmail.com");
+		PAdd.input_pass("8438126");
+		PAdd.click_login();
+		PAdd.click_btnCart();
+		PAdd.click_btnContinue();
+		PAdd.access_inCart();
+		PAdd.click_btncheckOut();
+		PAdd.click_btnOrder();
+		PAdd.input_nameCard("AutomaTion");
+		PAdd.input_numberCard("1234567687");
+		PAdd.input_cvcCard("234");
+		PAdd.input_MonthCard("25");
+		PAdd.input_YearCard("24");
+		PAdd.click_cfOrder();
+		PAdd.MessConfirm();
 	}
 	
 	

@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import Commons.CommonService;
+import Commons.ManageObj;
 import baseObjects.Page_Login;
 
 public class LoginUser extends CommonService{	
@@ -16,87 +17,91 @@ public class LoginUser extends CommonService{
 	
 	Page_Login Plogin;
 
-	@BeforeMethod
-	public void initdata() {
-		Plogin = new Page_Login(driver);
-	}
+
 	@Test
 	public void TC_003LoginWithWrongFormatEmail(){
-		test = extent.createTest("TC_003LoginWithWrongFormatEmail");						
-		Plogin.access_URL(test);	
-		Plogin.access_login(test);
-		Plogin.input_mail(test, "Toi.com");
-		Plogin.input_pass(test, "8438126");
-		Plogin.click_login(test);
-		Plogin.ComparevalidationhWrongFormatEmail(test);
+		test = extent.createTest("TC_003LoginWithWrongFormatEmail");
+		Plogin = ManageObj.ManageObj_Plogin_Object(driver, test);
+		Plogin.access_URL();	
+		Plogin.access_login();
+		Plogin.input_mail("Toi.com");
+		Plogin.input_pass("8438126");
+		Plogin.click_login();
+		Plogin.ComparevalidationhWrongFormatEmail();
 
 	}
 	
 	@Test
 	public void TC_004LoginWithEmtyEmail(){
-		test = extent.createTest("TC_004LoginWithEmtyEmail");		
-		Plogin.access_URL(test);	
-		Plogin.access_login(test);
-		Plogin.input_mail(test, "");
-		Plogin.input_pass(test, "8438126");
-		Plogin.click_login(test);
-		Plogin.ComparevalidationEmtyEmail(test);
+		test = extent.createTest("TC_004LoginWithEmtyEmail");
+		Plogin = ManageObj.ManageObj_Plogin_Object(driver, test);
+		Plogin.access_URL();	
+		Plogin.access_login();
+		Plogin.input_mail("");
+		Plogin.input_pass("8438126");
+		Plogin.click_login();
+		Plogin.ComparevalidationEmtyEmail();
 	}
 	
 	@Test
 	public void TC_005LoginWithEmtyPass(){
 		test = extent.createTest("TC_005LoginWithEmtyPass");
-		Plogin.access_URL(test);	
-		Plogin.access_login(test);
-		Plogin.input_mail(test, "Toi@gmail.com");
-		Plogin.input_pass(test, "");
-		Plogin.click_login(test);
-		Plogin.ComparevalidationEmtyPass(test);
+		Plogin = ManageObj.ManageObj_Plogin_Object(driver, test);
+		Plogin.access_URL();	
+		Plogin.access_login();
+		Plogin.input_mail("Toi@gmail.com");
+		Plogin.input_pass("");
+		Plogin.click_login();
+		Plogin.ComparevalidationEmtyPass();
 	}
 	
 	@Test
 	public void TC_006LoginWithWrongEmail(){
 		test = extent.createTest("TC_006LoginWithWrongEmail");
-		Plogin.access_URL(test);	
-		Plogin.access_login(test);
-		Plogin.input_mail(test, "lqhv@gmail.com");
-		Plogin.input_pass(test, "848126");
-		Plogin.click_login(test);
-		Plogin.ComparevalidationWrongEmail(test);
+		Plogin = ManageObj.ManageObj_Plogin_Object(driver, test);
+		Plogin.access_URL();	
+		Plogin.access_login();
+		Plogin.input_mail("lqhv@gmail.com");
+		Plogin.input_pass("848126");
+		Plogin.click_login();
+		Plogin.ComparevalidationWrongEmail();
 	}
 	
 	@Test
 	public void TC_007LoginWithWrongPass(){
 		test = extent.createTest("TC_007LoginWithWrongPass");
-		Plogin.access_URL(test);	
-		Plogin.access_login(test);
-		Plogin.input_mail(test, "Toi@gmail.com");
-		Plogin.input_pass(test, "234234");
-		Plogin.click_login(test);
-		Plogin.ComparevalidationWrongPass(test);		
+		Plogin = ManageObj.ManageObj_Plogin_Object(driver, test);
+		Plogin.access_URL();	
+		Plogin.access_login();
+		Plogin.input_mail("Toi@gmail.com");
+		Plogin.input_pass("234234");
+		Plogin.click_login();
+		Plogin.ComparevalidationWrongPass();		
 	}
 	
 	@Test
 	public void TC_008LoginSuccessfuly(){
 		test = extent.createTest("TC_008LoginSuccessfuly");
-		Plogin.access_URL(test);	
-		Plogin.access_login(test);
-		Plogin.input_mail(test, "Toi@gmail.com");
-		Plogin.input_pass(test, "8438126");
-		Plogin.click_login(test);
-		Plogin.CompareMessSuccessfuly(test);
+		Plogin = ManageObj.ManageObj_Plogin_Object(driver, test);
+		Plogin.access_URL();	
+		Plogin.access_login();
+		Plogin.input_mail("Toi@gmail.com");
+		Plogin.input_pass("8438126");
+		Plogin.click_login();
+		Plogin.CompareMessSuccessfuly();
 	}
 	 
 	@Test
 	public void TC_009UserCanLogout(){
-		test = extent.createTest("TC_009UserCanLogout");		
-		Plogin.access_URL(test);
-		Plogin.click_logout(test);
-		Plogin.access_login(test);
-		Plogin.input_mail(test, "Toi@gmail.com");
-		Plogin.input_pass(test, "8438126");
-		Plogin.click_login(test);
-		Plogin.ComparePageLogout(test);		
+		test = extent.createTest("TC_009UserCanLogout");
+		Plogin = ManageObj.ManageObj_Plogin_Object(driver, test);
+		Plogin.access_URL();
+		Plogin.click_logout();
+		Plogin.access_login();
+		Plogin.input_mail("Toi@gmail.com");
+		Plogin.input_pass("8438126");
+		Plogin.click_login();
+		Plogin.ComparePageLogout();		
 	}
 
 }

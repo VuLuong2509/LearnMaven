@@ -25,8 +25,10 @@ public class Page_Login {
 	String ExpectURL = "https://automationexercise.com/login";	
 	CommonFunc func = new CommonFunc();
 	WebDriver local_driver;
-	public Page_Login(WebDriver driver) {
-		local_driver = driver; 
+	ExtentTest local_test;
+	public Page_Login(WebDriver driver, ExtentTest test) {
+		local_driver = driver;
+		local_test = test;
 	}
 	//handel HTML5 Validation by javascript
 	//Research from https://vntesters.com/java-webdriver-14-kiem-tra-html5-validation-message/
@@ -36,82 +38,82 @@ public class Page_Login {
 		}
 	// Action
 	
-	public void access_URL(ExtentTest test) {
-		func.open_url(local_driver, test, URL);
+	public void access_URL() {
+		func.open_url(local_driver, local_test, URL);
 	}
 	
-	public void input_mail(ExtentTest test, String input_values) {
-		func.element_sendkey(local_driver, test, eleEmail, input_values);
+	public void input_mail(String input_values) {
+		func.element_sendkey(local_driver, local_test, eleEmail, input_values);
 	}
 
-	public void input_pass(ExtentTest test, String input_values) {
-		func.element_sendkey(local_driver, test, elePass, input_values);
+	public void input_pass(String input_values) {
+		func.element_sendkey(local_driver, local_test, elePass, input_values);
 	}
 
-	public void access_login(ExtentTest test) {
-		func.element_click(local_driver, test, xpathLogin);
+	public void access_login() {
+		func.element_click(local_driver, local_test, xpathLogin);
 	}
 
-	public void click_login(ExtentTest test) {
-		func.element_click(local_driver, test, btnLogin);
+	public void click_login() {
+		func.element_click(local_driver, local_test, btnLogin);
 	}
 	
-	public void click_logout(ExtentTest test) {
-		func.element_click(local_driver, test, xpathLogout);
+	public void click_logout() {
+		func.element_click(local_driver, local_test, xpathLogout);
 		
 	}
 	
-	public void ComparevalidationhWrongFormatEmail(ExtentTest test) {
+	public void ComparevalidationhWrongFormatEmail() {
 		String EmailWrongFormat = getHtml5ValidationMessage1(local_driver.findElement(By.xpath(eleEmail)));
 		Assert.assertEquals(EmailWrongFormat, "Please include an '@' in the email address. 'Toi.com' is missing an '@'.");
-		test.info("Compare validation");
+		local_test.info("Compare validation");
 	}
 	
-	public void ComparevalidationEmtyEmail(ExtentTest test) {
+	public void ComparevalidationEmtyEmail() {
 		String EmailEmtyMess = getHtml5ValidationMessage1(local_driver.findElement(By.xpath(eleEmail)));
 		Assert.assertEquals(EmailEmtyMess, "Please fill out this field.");
-		test.info("Compare validation");
+		local_test.info("Compare validation");
 	}
 	
-	public void ComparevalidationEmtyPass(ExtentTest test) {
+	public void ComparevalidationEmtyPass() {
 		String EmailEmtyPass = getHtml5ValidationMessage1(local_driver.findElement(By.xpath(elePass)));
 		Assert.assertEquals(EmailEmtyPass, "Please fill out this field.");
-		test.info("Compare validation");
+		local_test.info("Compare validation");
 	}
 	
-	public void ComparevalidationWrongEmail(ExtentTest test) {
+	public void ComparevalidationWrongEmail() {
 		WebElement getMess= local_driver.findElement(By.xpath(xpathlMess));
 		String actualMess = getMess.getText();
 		Assert.assertEquals(actualMess, Expectalert);
-		test.info("Compare validation");		
+		local_test.info("Compare validation");		
 	}
 	
-	public void ComparevalidationWrongPass(ExtentTest test) {
+	public void ComparevalidationWrongPass() {
 		WebElement getMess= local_driver.findElement(By.xpath(xpathlMess));
 		String actualMess = getMess.getText();
 		Assert.assertEquals(actualMess, Expectalert);
-		test.info("Compare validation");
+		local_test.info("Compare validation");
 	}
 	
-	public void CompareMessSuccessfuly(ExtentTest test) {
+	public void CompareMessSuccessfuly() {
 		WebElement getMess = local_driver.findElement(By.xpath(xpathMess));
 		String ActualMess = getMess.getText();
 		Assert.assertEquals(ActualMess, ExpectMess);
-		test.info("Compare validation");
+		local_test.info("Compare validation");
 	}
 	
-	public void ComparePageLogout(ExtentTest test) {
+	public void ComparePageLogout() {
 		try {
 			Thread.sleep(2500);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		func.element_click(local_driver, test, xpathLogout);
+		func.element_click(local_driver, local_test, xpathLogout);
 		JavascriptExecutor js = (JavascriptExecutor) local_driver;// declare javascript
 		String currentURL = (String) js.executeScript("return window.location.href"); // get current URL
 		Assert.assertEquals(currentURL, ExpectURL); // compare URL
-		test.info("Compare validation Current");
+		local_test.info("Compare validation Current");
 	}
 	
 	

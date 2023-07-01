@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,15 +104,49 @@
                     <div class="method-list-content failed suite-Suite1">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="Vluong_Day11.RegisterUser" hash-for-method="TC_001RegisterNewUser">TC_001RegisterNewUser</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="Vluong_Day11.RegisterUser" hash-for-method="TC_002RegisterNewUserWithExistingEmail">TC_002RegisterNewUserWithExistingEmail</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="Vluong_Day11.LoginUser" hash-for-method="TC_009UserCanLogout">TC_009UserCanLogout</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite1 -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite1" class="hide-methods passed suite-Suite1"> (hide)</a> <!-- hide-methods passed suite-Suite1 -->
+                      <a href="#" panel-name="suite-Suite1" class="show-methods passed suite-Suite1"> (show)</a> <!-- show-methods passed suite-Suite1 -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite1">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="Vluong_Day11.LoginUser" hash-for-method="TC_003LoginWithWrongFormatEmail">TC_003LoginWithWrongFormatEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="Vluong_Day11.LoginUser" hash-for-method="TC_004LoginWithEmtyEmail">TC_004LoginWithEmtyEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="Vluong_Day11.LoginUser" hash-for-method="TC_005LoginWithEmtyPass">TC_005LoginWithEmtyPass</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="Vluong_Day11.LoginUser" hash-for-method="TC_006LoginWithWrongEmail">TC_006LoginWithWrongEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="Vluong_Day11.LoginUser" hash-for-method="TC_007LoginWithWrongPass">TC_007LoginWithWrongPass</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="Vluong_Day11.LoginUser" hash-for-method="TC_008LoginSuccessfuly">TC_008LoginSuccessfuly</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite1 -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -127,37 +161,24 @@
           <div class="suite-Suite1-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">Vluong_Day11.RegisterUser</span>
+              <span class="class-name">Vluong_Day11.LoginUser</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC_001RegisterNewUser">
-                  </a> <!-- TC_001RegisterNewUser -->
-                  <span class="method-name">TC_001RegisterNewUser</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at Commons.CommonFunc.open_url(CommonFunc.java:54)
-	at baseObjects.Page_Register.access_Page(Page_Register.java:63)
-	at Vluong_Day11.RegisterUser.TC_001RegisterNewUser(RegisterUser.java:41)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_002RegisterNewUserWithExistingEmail">
-                  </a> <!-- TC_002RegisterNewUserWithExistingEmail -->
-                  <span class="method-name">TC_002RegisterNewUserWithExistingEmail</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&apos;/logout&apos;]&quot;}
-  (Session info: chrome=114.0.5735.134)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+                  <a name="TC_009UserCanLogout">
+                  </a> <!-- TC_009UserCanLogout -->
+                  <span class="method-name">TC_009UserCanLogout</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //a[@href=&apos;/logout&apos;], because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//a[@href=&apos;/logout&apos;],&apos; is not a valid XPath expression.
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_361&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385dae7cdd8a371bcd96ba431b311137, findElement {using=xpath, value=//a[@href=&apos;/logout&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VuLuong\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63897}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63897/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385dae7cdd8a371bcd96ba431b311137
+Command: [9ffac7576eba0fd50e5bf1d82b97e143, findElement {using=xpath, value=//a[@href=&apos;/logout&apos;],}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VuLuong\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54618}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54618/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ffac7576eba0fd50e5bf1d82b97e143
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -170,8 +191,8 @@ Session ID: 385dae7cdd8a371bcd96ba431b311137
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at Commons.CommonFunc.element_click(CommonFunc.java:59)
-	at baseObjects.Page_Register.click_logout(Page_Register.java:162)
-	at Vluong_Day11.RegisterUser.TC_002RegisterNewUserWithExistingEmail(RegisterUser.java:70)
+	at baseObjects.Page_Login.click_logout(Page_Login.java:62)
+	at Vluong_Day11.LoginUser.TC_009UserCanLogout(LoginUser.java:99)
 	at java.util.ArrayList.forEach(Unknown Source)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
@@ -179,6 +200,56 @@ Session ID: 385dae7cdd8a371bcd96ba431b311137
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite1-class-failed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Vluong_Day11.LoginUser</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_003LoginWithWrongFormatEmail">
+                  </a> <!-- TC_003LoginWithWrongFormatEmail -->
+                  <span class="method-name">TC_003LoginWithWrongFormatEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_004LoginWithEmtyEmail">
+                  </a> <!-- TC_004LoginWithEmtyEmail -->
+                  <span class="method-name">TC_004LoginWithEmtyEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_005LoginWithEmtyPass">
+                  </a> <!-- TC_005LoginWithEmtyPass -->
+                  <span class="method-name">TC_005LoginWithEmtyPass</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_006LoginWithWrongEmail">
+                  </a> <!-- TC_006LoginWithWrongEmail -->
+                  <span class="method-name">TC_006LoginWithWrongEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_007LoginWithWrongPass">
+                  </a> <!-- TC_007LoginWithWrongPass -->
+                  <span class="method-name">TC_007LoginWithWrongPass</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_008LoginSuccessfuly">
+                  </a> <!-- TC_008LoginSuccessfuly -->
+                  <span class="method-name">TC_008LoginSuccessfuly</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
         </div> <!-- panel Suite1 -->
         <div panel-name="test-xml-Suite1" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -192,7 +263,7 @@ Session ID: 385dae7cdd8a371bcd96ba431b311137
   &lt;test thread-count=&quot;5&quot; name=&quot;RunCC&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Vluong_Day11.RegisterUser&quot;/&gt;
+      &lt;class name=&quot;Vluong_Day11.LoginUser&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- RunCC --&gt;
 &lt;/suite&gt; &lt;!-- Suite1 --&gt;
@@ -232,20 +303,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC_002RegisterNewUserWithExistingEmail')
-data.setCell(0, 2, 'Vluong_Day11.RegisterUser')
-data.setCell(0, 3, 5371);
+data.setCell(0, 1, 'TC_007LoginWithWrongPass')
+data.setCell(0, 2, 'Vluong_Day11.LoginUser')
+data.setCell(0, 3, 11162);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC_001RegisterNewUser')
-data.setCell(1, 2, 'Vluong_Day11.RegisterUser')
-data.setCell(1, 3, 7);
+data.setCell(1, 1, 'TC_008LoginSuccessfuly')
+data.setCell(1, 2, 'Vluong_Day11.LoginUser')
+data.setCell(1, 3, 7230);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC_003LoginWithWrongFormatEmail')
+data.setCell(2, 2, 'Vluong_Day11.LoginUser')
+data.setCell(2, 3, 5329);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TC_005LoginWithEmtyPass')
+data.setCell(3, 2, 'Vluong_Day11.LoginUser')
+data.setCell(3, 3, 5325);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TC_004LoginWithEmtyEmail')
+data.setCell(4, 2, 'Vluong_Day11.LoginUser')
+data.setCell(4, 3, 5266);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TC_006LoginWithWrongEmail')
+data.setCell(5, 2, 'Vluong_Day11.LoginUser')
+data.setCell(5, 3, 5005);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TC_009UserCanLogout')
+data.setCell(6, 2, 'Vluong_Day11.LoginUser')
+data.setCell(6, 3, 4647);
 window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 43 seconds</span>
               <div id="times-div-Suite1">
               </div> <!-- times-div-Suite1 -->
             </div> <!-- times-div -->
@@ -271,42 +362,72 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Vluong_Day11.RegisterUser</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Vluong_Day11.LoginUser</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">Rundriver(Chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="configuration-method before">
-                <span class="method-name">initdata</span>
-                <span class="method-start">5041 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">TC_001RegisterNewUser</span>
-                <span class="method-start">5043 ms</span>
+                <span class="method-name">TC_003LoginWithWrongFormatEmail</span>
+                <span class="method-start">9496 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">saveAttachment</span>
-                <span class="method-start">5053 ms</span>
+                <span class="method-name">saveAttachment([TestResult name=TC_003LoginWithWrongFormatEmail status=SUCCESS method=LoginUser.TC_003LoginWithWron...)</span>
+                <span class="method-start">14827 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC_004LoginWithEmtyEmail</span>
+                <span class="method-start">17880 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">saveAttachment([TestResult name=TC_004LoginWithEmtyEmail status=SUCCESS method=LoginUser.TC_004LoginWithEmtyEmail()...)</span>
+                <span class="method-start">23147 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC_005LoginWithEmtyPass</span>
+                <span class="method-start">25881 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">saveAttachment([TestResult name=TC_005LoginWithEmtyPass status=SUCCESS method=LoginUser.TC_005LoginWithEmtyPass()[p...)</span>
+                <span class="method-start">31207 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC_006LoginWithWrongEmail</span>
+                <span class="method-start">33947 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">saveAttachment([TestResult name=TC_006LoginWithWrongEmail status=SUCCESS method=LoginUser.TC_006LoginWithWrongEmail...)</span>
+                <span class="method-start">38953 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC_007LoginWithWrongPass</span>
+                <span class="method-start">41672 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">saveAttachment([TestResult name=TC_007LoginWithWrongPass status=SUCCESS method=LoginUser.TC_007LoginWithWrongPass()...)</span>
+                <span class="method-start">52835 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC_008LoginSuccessfuly</span>
+                <span class="method-start">55558 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">saveAttachment([TestResult name=TC_008LoginSuccessfuly status=SUCCESS method=LoginUser.TC_008LoginSuccessfuly()[pri...)</span>
+                <span class="method-start">62789 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">TC_002RegisterNewUserWithExistingEmail</span>
-                <span class="method-start">8093 ms</span>
+                <span class="method-name">TC_009UserCanLogout</span>
+                <span class="method-start">65634 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">initdata</span>
-                <span class="method-start">8093 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
-                <span class="method-name">saveAttachment</span>
-                <span class="method-start">13466 ms</span>
+                <span class="method-name">saveAttachment([TestResult name=TC_009UserCanLogout status=FAILURE method=LoginUser.TC_009UserCanLogout()[pri:0, in...)</span>
+                <span class="method-start">70284 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">AfterRun</span>
-                <span class="method-start">16341 ms</span>
+                <span class="method-start">73121 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

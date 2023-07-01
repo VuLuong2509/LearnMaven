@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="7" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="16344" started-at="2023-06-24T18:16:10 ICT" finished-at="2023-06-24T18:16:27 ICT">
+  <suite name="Suite1" duration-ms="73848" started-at="2023-07-01T16:58:20 ICT" finished-at="2023-07-01T16:59:34 ICT">
     <groups>
     </groups>
-    <test name="RunCC" duration-ms="16344" started-at="2023-06-24T18:16:10 ICT" finished-at="2023-06-24T18:16:27 ICT">
-      <class name="Vluong_Day11.RegisterUser">
-        <test-method status="PASS" signature="Rundriver(java.lang.String)[pri:0, instance:Vluong_Day11.RegisterUser@51c8530f]" name="Rundriver" is-config="true" duration-ms="5027" started-at="2023-06-24T18:16:10 ICT" finished-at="2023-06-24T18:16:15 ICT">
+    <test name="RunCC" duration-ms="73848" started-at="2023-07-01T16:58:20 ICT" finished-at="2023-07-01T16:59:34 ICT">
+      <class name="Vluong_Day11.LoginUser">
+        <test-method status="PASS" signature="Rundriver(java.lang.String)[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="Rundriver" is-config="true" duration-ms="9482" started-at="2023-07-01T16:58:20 ICT" finished-at="2023-07-01T16:58:30 ICT">
           <params>
             <param index="0">
               <value>
@@ -18,78 +18,121 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Rundriver -->
-        <test-method status="PASS" signature="initdata()[pri:0, instance:Vluong_Day11.RegisterUser@51c8530f]" name="initdata" is-config="true" duration-ms="1" started-at="2023-06-24T18:16:15 ICT" finished-at="2023-06-24T18:16:15 ICT">
+        <test-method status="PASS" signature="TC_003LoginWithWrongFormatEmail()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="TC_003LoginWithWrongFormatEmail" duration-ms="5329" started-at="2023-07-01T16:58:30 ICT" finished-at="2023-07-01T16:58:35 ICT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initdata -->
-        <test-method status="FAIL" signature="TC_001RegisterNewUser()[pri:0, instance:Vluong_Day11.RegisterUser@51c8530f]" name="TC_001RegisterNewUser" duration-ms="7" started-at="2023-06-24T18:16:15 ICT" finished-at="2023-06-24T18:16:15 ICT">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at Commons.CommonFunc.open_url(CommonFunc.java:54)
-at baseObjects.Page_Register.access_Page(Page_Register.java:63)
-at Vluong_Day11.RegisterUser.TC_001RegisterNewUser(RegisterUser.java:41)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_001RegisterNewUser -->
-        <test-method status="PASS" signature="saveAttachment()[pri:0, instance:Vluong_Day11.RegisterUser@51c8530f]" name="saveAttachment" is-config="true" duration-ms="3039" started-at="2023-06-24T18:16:15 ICT" finished-at="2023-06-24T18:16:18 ICT">
+        </test-method> <!-- TC_003LoginWithWrongFormatEmail -->
+        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="saveAttachment" is-config="true" duration-ms="3052" started-at="2023-07-01T16:58:35 ICT" finished-at="2023-07-01T16:58:38 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_003LoginWithWrongFormatEmail status=SUCCESS method=LoginUser.TC_003LoginWithWrongFormatEmail()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- saveAttachment -->
-        <test-method status="FAIL" signature="TC_002RegisterNewUserWithExistingEmail()[pri:0, instance:Vluong_Day11.RegisterUser@51c8530f]" name="TC_002RegisterNewUserWithExistingEmail" duration-ms="5371" started-at="2023-06-24T18:16:18 ICT" finished-at="2023-06-24T18:16:24 ICT">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="PASS" signature="TC_004LoginWithEmtyEmail()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="TC_004LoginWithEmtyEmail" duration-ms="5266" started-at="2023-07-01T16:58:38 ICT" finished-at="2023-07-01T16:58:44 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_004LoginWithEmtyEmail -->
+        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="saveAttachment" is-config="true" duration-ms="2733" started-at="2023-07-01T16:58:44 ICT" finished-at="2023-07-01T16:58:46 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_004LoginWithEmtyEmail status=SUCCESS method=LoginUser.TC_004LoginWithEmtyEmail()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveAttachment -->
+        <test-method status="PASS" signature="TC_005LoginWithEmtyPass()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="TC_005LoginWithEmtyPass" duration-ms="5325" started-at="2023-07-01T16:58:46 ICT" finished-at="2023-07-01T16:58:52 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_005LoginWithEmtyPass -->
+        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="saveAttachment" is-config="true" duration-ms="2739" started-at="2023-07-01T16:58:52 ICT" finished-at="2023-07-01T16:58:54 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_005LoginWithEmtyPass status=SUCCESS method=LoginUser.TC_005LoginWithEmtyPass()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveAttachment -->
+        <test-method status="PASS" signature="TC_006LoginWithWrongEmail()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="TC_006LoginWithWrongEmail" duration-ms="5005" started-at="2023-07-01T16:58:54 ICT" finished-at="2023-07-01T16:58:59 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_006LoginWithWrongEmail -->
+        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="saveAttachment" is-config="true" duration-ms="2718" started-at="2023-07-01T16:58:59 ICT" finished-at="2023-07-01T16:59:02 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_006LoginWithWrongEmail status=SUCCESS method=LoginUser.TC_006LoginWithWrongEmail()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveAttachment -->
+        <test-method status="PASS" signature="TC_007LoginWithWrongPass()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="TC_007LoginWithWrongPass" duration-ms="11162" started-at="2023-07-01T16:59:02 ICT" finished-at="2023-07-01T16:59:13 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_007LoginWithWrongPass -->
+        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="saveAttachment" is-config="true" duration-ms="2722" started-at="2023-07-01T16:59:13 ICT" finished-at="2023-07-01T16:59:16 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_007LoginWithWrongPass status=SUCCESS method=LoginUser.TC_007LoginWithWrongPass()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveAttachment -->
+        <test-method status="PASS" signature="TC_008LoginSuccessfuly()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="TC_008LoginSuccessfuly" duration-ms="7230" started-at="2023-07-01T16:59:16 ICT" finished-at="2023-07-01T16:59:23 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_008LoginSuccessfuly -->
+        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="saveAttachment" is-config="true" duration-ms="2845" started-at="2023-07-01T16:59:23 ICT" finished-at="2023-07-01T16:59:26 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_008LoginSuccessfuly status=SUCCESS method=LoginUser.TC_008LoginSuccessfuly()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveAttachment -->
+        <test-method status="FAIL" signature="TC_009UserCanLogout()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="TC_009UserCanLogout" duration-ms="4647" started-at="2023-07-01T16:59:26 ICT" finished-at="2023-07-01T16:59:31 ICT">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/logout']"}
-  (Session info: chrome=114.0.5735.134)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+              <![CDATA[invalid selector: Unable to locate an element with the xpath expression //a[@href='/logout'], because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//a[@href='/logout'],' is not a valid XPath expression.
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: '4.8.1', revision: '8ebccac989'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_361'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385dae7cdd8a371bcd96ba431b311137, findElement {using=xpath, value=//a[@href='/logout']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VuLuong\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63897}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63897/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385dae7cdd8a371bcd96ba431b311137]]>
+Command: [9ffac7576eba0fd50e5bf1d82b97e143, findElement {using=xpath, value=//a[@href='/logout'],}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VuLuong\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54618}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54618/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ffac7576eba0fd50e5bf1d82b97e143]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/logout']"}
-  (Session info: chrome=114.0.5735.134)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //a[@href='/logout'], because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//a[@href='/logout'],' is not a valid XPath expression.
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: '4.8.1', revision: '8ebccac989'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_361'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385dae7cdd8a371bcd96ba431b311137, findElement {using=xpath, value=//a[@href='/logout']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VuLuong\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63897}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63897/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385dae7cdd8a371bcd96ba431b311137
+Command: [9ffac7576eba0fd50e5bf1d82b97e143, findElement {using=xpath, value=//a[@href='/logout'],}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VuLuong\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54618}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54618/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ffac7576eba0fd50e5bf1d82b97e143
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -106,8 +149,8 @@ at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:6
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 at Commons.CommonFunc.element_click(CommonFunc.java:59)
-at baseObjects.Page_Register.click_logout(Page_Register.java:162)
-at Vluong_Day11.RegisterUser.TC_002RegisterNewUserWithExistingEmail(RegisterUser.java:70)
+at baseObjects.Page_Login.click_logout(Page_Login.java:62)
+at Vluong_Day11.LoginUser.TC_009UserCanLogout(LoginUser.java:99)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -138,23 +181,26 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_002RegisterNewUserWithExistingEmail -->
-        <test-method status="PASS" signature="initdata()[pri:0, instance:Vluong_Day11.RegisterUser@51c8530f]" name="initdata" is-config="true" duration-ms="0" started-at="2023-06-24T18:16:18 ICT" finished-at="2023-06-24T18:16:18 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initdata -->
-        <test-method status="PASS" signature="saveAttachment()[pri:0, instance:Vluong_Day11.RegisterUser@51c8530f]" name="saveAttachment" is-config="true" duration-ms="2874" started-at="2023-06-24T18:16:24 ICT" finished-at="2023-06-24T18:16:27 ICT">
+        </test-method> <!-- TC_009UserCanLogout -->
+        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="saveAttachment" is-config="true" duration-ms="2836" started-at="2023-07-01T16:59:31 ICT" finished-at="2023-07-01T16:59:33 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_009UserCanLogout status=FAILURE method=LoginUser.TC_009UserCanLogout()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- saveAttachment -->
-        <test-method status="PASS" signature="AfterRun()[pri:0, instance:Vluong_Day11.RegisterUser@51c8530f]" name="AfterRun" is-config="true" duration-ms="0" started-at="2023-06-24T18:16:27 ICT" finished-at="2023-06-24T18:16:27 ICT">
+        <test-method status="PASS" signature="AfterRun()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="AfterRun" is-config="true" duration-ms="722" started-at="2023-07-01T16:59:33 ICT" finished-at="2023-07-01T16:59:34 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterRun -->
-      </class> <!-- Vluong_Day11.RegisterUser -->
+      </class> <!-- Vluong_Day11.LoginUser -->
     </test> <!-- RunCC -->
   </suite> <!-- Suite1 -->
 </testng-results>

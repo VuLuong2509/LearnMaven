@@ -18,6 +18,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import Commons.CommonService;
+import Commons.ManageObj;
 import baseObjects.Page_Register;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -25,15 +26,12 @@ import org.openqa.selenium.JavascriptExecutor;
 
 public class RegisterUser extends CommonService{
 	Page_Register Pregis;
-	@BeforeMethod
-	public void initdata() {
-		Pregis = new Page_Register(driver, test);
-	}
+
 	
 	@Test
 	public void TC_001RegisterNewUser() {
 		test = extent.createTest("TC_001RegisterNewUser");
-	
+		Pregis = ManageObj.ManageObj_Pregis_Object(driver, test);
 		// Random
 		Random Ran = new Random();
 		Integer RanInt = Ran.nextInt(1000);			
@@ -66,6 +64,7 @@ public class RegisterUser extends CommonService{
 	@Test
 	public void TC_002RegisterNewUserWithExistingEmail() {
 		test = extent.createTest("TC_002RegisterNewUserWithExistingEmail");
+		Pregis = ManageObj.ManageObj_Pregis_Object(driver, test);
 		Pregis.access_Page();
 		Pregis.click_logout();
 		Pregis.click_linkLogin();

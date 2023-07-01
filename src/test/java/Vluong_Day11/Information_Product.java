@@ -23,20 +23,19 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import Commons.CommonService;
 import Commons.Data;
+import Commons.ManageObj;
 import baseObjects.Page_Infor;
 import baseObjects.Page_Login;
 
 public class Information_Product extends CommonService{
 	
 	Page_Infor Pinfor;
-	@BeforeMethod
-	public void initdata() {
-		Pinfor = new Page_Infor(driver);
-	}	
+	
 	@Test
 	public void TC_010InforItemWomen() {	
         test = extent.createTest("TC_010InforItemWomen");
-		Pinfor.access_URL(test);
+        Pinfor = ManageObj.ManageObj_Pinfor_Object(driver, test);
+		Pinfor.access_URL();
 		
 		//closeAds
 		String title = "AdBlock is now installed!";
@@ -54,15 +53,15 @@ public class Information_Product extends CommonService{
 		driver.switchTo().window(CntWin);
 		//
 		
-		Pinfor.access_linkProduct(test);
-		Pinfor.access_ProductDressWM(test);
-		Pinfor.access_ProductD1(test);
-		Pinfor.compare_NameProduct(test);
-		Pinfor.compare_CateProduct(test);
-		Pinfor.compare_PriceProduct(test);
-		Pinfor.compare_AvailabilityProduct(test);
-		Pinfor.compare_ConditionProduct(test);
-		Pinfor.compare_BrandProduct(test);		
+		Pinfor.access_linkProduct();
+		Pinfor.access_ProductDressWM();
+		Pinfor.access_ProductD1();
+		Pinfor.compare_NameProduct();
+		Pinfor.compare_CateProduct();
+		Pinfor.compare_PriceProduct();
+		Pinfor.compare_AvailabilityProduct();
+		Pinfor.compare_ConditionProduct();
+		Pinfor.compare_BrandProduct();		
 		try {
 			Thread.sleep(2500);
 		} catch (InterruptedException e) {

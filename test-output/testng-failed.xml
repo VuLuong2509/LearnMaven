@@ -4,16 +4,14 @@
   <test thread-count="5" name="RunCC(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="Vluong_Day11.RegisterUser">
+      <class name="Vluong_Day11.LoginUser">
         <methods>
           <include name="saveAttachment"/>
-          <include name="TC_002RegisterNewUserWithExistingEmail"/>
           <include name="Rundriver"/>
-          <include name="initdata"/>
-          <include name="TC_001RegisterNewUser"/>
           <include name="AfterRun"/>
+          <include name="TC_009UserCanLogout"/>
         </methods>
-      </class> <!-- Vluong_Day11.RegisterUser -->
+      </class> <!-- Vluong_Day11.LoginUser -->
     </classes>
   </test> <!-- RunCC(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

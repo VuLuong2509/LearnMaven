@@ -9,25 +9,20 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite1</th></tr>
-<tr><td><a href="#t0">RunCC</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">16,344</td><td></td><td></td></tr>
+<tr><td><a href="#t0">RunCC</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">73,848</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">RunCC &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">Vluong_Day11.RegisterUser</td><td><a href="#m0">TC_001RegisterNewUser</a></td><td rowspan="1">1687605375889</td><td rowspan="1">7</td></tr><tr class="failedeven"><td><a href="#m1">TC_002RegisterNewUserWithExistingEmail</a></td><td rowspan="1">1687605378939</td><td rowspan="1">5371</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">RunCC &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Vluong_Day11.LoginUser</td><td><a href="#m0">TC_009UserCanLogout</a></td><td rowspan="1">1688205566491</td><td rowspan="1">4647</td></tr><tr><th colspan="4">RunCC &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">Vluong_Day11.LoginUser</td><td><a href="#m1">TC_003LoginWithWrongFormatEmail</a></td><td rowspan="1">1688205510353</td><td rowspan="1">5329</td></tr><tr class="passedeven"><td><a href="#m2">TC_004LoginWithEmtyEmail</a></td><td rowspan="1">1688205518737</td><td rowspan="1">5266</td></tr><tr class="passedeven"><td><a href="#m3">TC_005LoginWithEmtyPass</a></td><td rowspan="1">1688205526738</td><td rowspan="1">5325</td></tr><tr class="passedeven"><td><a href="#m4">TC_006LoginWithWrongEmail</a></td><td rowspan="1">1688205534804</td><td rowspan="1">5005</td></tr><tr class="passedeven"><td><a href="#m5">TC_007LoginWithWrongPass</a></td><td rowspan="1">1688205542529</td><td rowspan="1">11162</td></tr><tr class="passedeven"><td><a href="#m6">TC_008LoginSuccessfuly</a></td><td rowspan="1">1688205556415</td><td rowspan="1">7230</td></tr></tbody>
 </table>
-<h2>RunCC</h2><h3 id="m0">Vluong_Day11.RegisterUser#TC_001RegisterNewUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at Commons.CommonFunc.open_url(CommonFunc.java:54)
-	at baseObjects.Page_Register.access_Page(Page_Register.java:63)
-	at Vluong_Day11.RegisterUser.TC_001RegisterNewUser(RegisterUser.java:41)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Vluong_Day11.RegisterUser#TC_002RegisterNewUserWithExistingEmail</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&apos;/logout&apos;]&quot;}
-  (Session info: chrome=114.0.5735.134)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+<h2>RunCC</h2><h3 id="m0">Vluong_Day11.LoginUser#TC_009UserCanLogout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //a[@href=&apos;/logout&apos;], because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//a[@href=&apos;/logout&apos;],&apos; is not a valid XPath expression.
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_361&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [385dae7cdd8a371bcd96ba431b311137, findElement {using=xpath, value=//a[@href=&apos;/logout&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VuLuong\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63897}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63897/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 385dae7cdd8a371bcd96ba431b311137
+Command: [9ffac7576eba0fd50e5bf1d82b97e143, findElement {using=xpath, value=//a[@href=&apos;/logout&apos;],}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VuLuong\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54618}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54618/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ffac7576eba0fd50e5bf1d82b97e143
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -40,9 +35,15 @@ Session ID: 385dae7cdd8a371bcd96ba431b311137
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at Commons.CommonFunc.element_click(CommonFunc.java:59)
-	at baseObjects.Page_Register.click_logout(Page_Register.java:162)
-	at Vluong_Day11.RegisterUser.TC_002RegisterNewUserWithExistingEmail(RegisterUser.java:70)
+	at baseObjects.Page_Login.click_logout(Page_Login.java:62)
+	at Vluong_Day11.LoginUser.TC_009UserCanLogout(LoginUser.java:99)
 	at java.util.ArrayList.forEach(Unknown Source)
 ... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Vluong_Day11.LoginUser#TC_003LoginWithWrongFormatEmail</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Vluong_Day11.LoginUser#TC_004LoginWithEmtyEmail</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Vluong_Day11.LoginUser#TC_005LoginWithEmtyPass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Vluong_Day11.LoginUser#TC_006LoginWithWrongEmail</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Vluong_Day11.LoginUser#TC_007LoginWithWrongPass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Vluong_Day11.LoginUser#TC_008LoginSuccessfuly</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

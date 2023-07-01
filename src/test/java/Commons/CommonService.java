@@ -12,6 +12,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -57,25 +58,32 @@ public class CommonService {
 		}
 		
 		driver.manage().window().maximize();
-//		String title = "AdBlock is now installed!";
-//		String CntWin = driver.getWindowHandle();
-//		Set<String> windows = driver.getWindowHandles();
-//		
-//		for (String str : windows) {
-//			driver.switchTo().window(str); 
-//			System.out.println(str);
-//			if (driver.getTitle().equalsIgnoreCase(title)) {
-//				driver.switchTo().window(str);
-//				driver.close();
-//			}			
-//		}
-//		try {
-//			Thread.sleep(2500);
-//		} catch (InterruptedException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		driver.switchTo().window(CntWin);
+		try {
+			Thread.sleep(2500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		String title = "AdBlock is now installed!";
+		String CntWin = driver.getWindowHandle();
+		Set<String> windows = driver.getWindowHandles();
+		
+		for (String str : windows) {
+			driver.switchTo().window(str); 
+			System.out.println(str);
+			if (driver.getTitle().equalsIgnoreCase(title)) {
+				driver.switchTo().window(str);
+				driver.close();
+			}			
+		}
+		try {
+			Thread.sleep(2500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		driver.switchTo().window(CntWin);
 		return driver;				
 	}
 
@@ -83,13 +91,21 @@ public class CommonService {
 
 
 	@AfterMethod
-	public void saveAttachment() {
-		test.info(MediaEntityBuilder.createScreenCaptureFromPath(Func.screenShot(driver)).build());
+	public void saveAttachment(ITestResult result) {
+		if(result.getStatus()==1) {
+			test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Func.screenShot(driver)).build());
+		} else if (result.getStatus()==2) {
+			test.fail(MediaEntityBuilder.createScreenCaptureFromPath(Func.screenShot(driver)).build());
+		} else {
+			test.info(MediaEntityBuilder.createScreenCaptureFromPath(Func.screenShot(driver)).build());
+		}
+		
+		
 		extent.flush();
 	}
 	@AfterTest
 	public void AfterRun() {
-//		driver.quit();
+		driver.quit();
 	}
 	
 	

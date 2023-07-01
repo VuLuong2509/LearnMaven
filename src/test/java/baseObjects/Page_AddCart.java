@@ -40,48 +40,50 @@ public class Page_AddCart {
 	String Iframe ="//iframe[@id='aswift_5']";
 	CommonFunc func = new CommonFunc();
 	WebDriver local_driver;
-	public  Page_AddCart(WebDriver driver) {
-		local_driver = driver; 
+	ExtentTest local_test;
+	public  Page_AddCart(WebDriver driver, ExtentTest test) {
+		local_driver = driver;
+		local_test = test;
 	}
 	
-	public void access_URL(ExtentTest test) {
-		func.open_url(local_driver, test, URL);
+	public void access_URL() {
+		func.open_url(local_driver, local_test, URL);
 	}
-	public void click_btnCart(ExtentTest test) {		
-		func.element_click_byJS(local_driver, test, xpathAddcart);
-	}
-	
-	public void click_btnContinue(ExtentTest test) {		
-		func.element_click_byJS(local_driver, test, xpathbtnContinue);
+	public void click_btnCart() {		
+		func.element_click_byJS(local_driver, local_test, xpathAddcart);
 	}
 	
-	public void compareMessPopup(ExtentTest test) {
+	public void click_btnContinue() {		
+		func.element_click_byJS(local_driver, local_test, xpathbtnContinue);
+	}
+	
+	public void compareMessPopup() {
 		JavascriptExecutor js = (JavascriptExecutor)local_driver;
 		WebElement setText = local_driver.findElement(By.xpath(xpathPopupAdd));
 //		String setF = (String) js.executeScript("return arguments[0].value='Hello'", setText);
 		String checkF = (String) js.executeScript("return arguments[0].textContent", setText);
 		System.out.println(checkF);
 		Assert.assertEquals(checkF, "Added!");
-		test.info("Compare validation");
+		local_test.info("Compare validation");
 	}
 	
-	public void access_inCart(ExtentTest test) {
-		func.element_click(local_driver, test, xpathCart);
+	public void access_inCart() {
+		func.element_click(local_driver, local_test, xpathCart);
 	}
 	
-	public void getquanlity(ExtentTest test) {
+	public void getquanlity() {
 		WebElement Quantity = local_driver.findElement(By.xpath(xpathQuantity));
 		String SetQuan = Quantity.getText();
 		Assert.assertEquals(SetQuan, func.getAttributeValues(local_driver, xpathQuantity, "textContent"));
-		test.info("Compare Product Quantity");
+		local_test.info("Compare Product Quantity");
 	}
 	
-	public void Remove_Product(ExtentTest test) {
-		func.element_click(local_driver, test, xpathRemove);
+	public void Remove_Product() {
+		func.element_click(local_driver, local_test, xpathRemove);
 		
 	}
 	
-	public void MessEmptyCart(ExtentTest test) {
+	public void MessEmptyCart() {
 		try {
 			Thread.sleep(2500);
 		} catch (InterruptedException e) {
@@ -92,58 +94,58 @@ public class Page_AddCart {
 		String SetMess = MessinCart.getText();
 		System.out.println(SetMess);
 		Assert.assertEquals(SetMess, MessinCart.getAttribute("textContent"));
-		test.info("Compare Mess InCart");
+		local_test.info("Compare Mess InCart");
 	}
 	
-	public void input_mail(ExtentTest test, String input_values) {
-		func.element_sendkey(local_driver, test, eleEmail, input_values);
+	public void input_mail(String input_values) {
+		func.element_sendkey(local_driver, local_test, eleEmail, input_values);
 	}
 
-	public void input_pass(ExtentTest test, String input_values) {
-		func.element_sendkey(local_driver, test, elePass, input_values);
+	public void input_pass(String input_values) {
+		func.element_sendkey(local_driver, local_test, elePass, input_values);
 	}
 
-	public void access_login(ExtentTest test) {
-		func.element_click(local_driver, test, xpathLogin);
+	public void access_login() {
+		func.element_click(local_driver, local_test, xpathLogin);
 	}
 
-	public void click_login(ExtentTest test) {
-		func.element_click(local_driver, test, btnLogin);
+	public void click_login() {
+		func.element_click(local_driver, local_test, btnLogin);
 	}
 	
-	public void click_btncheckOut(ExtentTest test) {
-		func.element_click(local_driver, test, xpathbtCheckOut);
+	public void click_btncheckOut() {
+		func.element_click(local_driver, local_test, xpathbtCheckOut);
 	}
 	
-	public void click_btnOrder(ExtentTest test) {
-		func.element_click(local_driver, test, xpathbtnOrder);
+	public void click_btnOrder() {
+		func.element_click(local_driver, local_test, xpathbtnOrder);
 	}
 	
-	public void input_nameCard(ExtentTest test, String input_values) {
-		func.element_sendkey(local_driver, test, xpathNameCard, input_values);
+	public void input_nameCard(String input_values) {
+		func.element_sendkey(local_driver, local_test, xpathNameCard, input_values);
 	}
 	
-	public void input_numberCard(ExtentTest test, String input_values) {
-		func.element_sendkey(local_driver, test, xpathNumberCard, input_values);
+	public void input_numberCard(String input_values) {
+		func.element_sendkey(local_driver, local_test, xpathNumberCard, input_values);
 	}
 	
-	public void input_cvcCard(ExtentTest test, String input_values) {
-		func.element_sendkey(local_driver, test, xpathCVC, input_values);
+	public void input_cvcCard( String input_values) {
+		func.element_sendkey(local_driver, local_test, xpathCVC, input_values);
 	}
 	
-	public void input_MonthCard(ExtentTest test, String input_values) {
-		func.element_sendkey(local_driver, test, xpathMM, input_values);
+	public void input_MonthCard( String input_values) {
+		func.element_sendkey(local_driver, local_test, xpathMM, input_values);
 	}
 	
-	public void input_YearCard(ExtentTest test, String input_values) {
-		func.element_sendkey(local_driver, test, xpathYY, input_values);
+	public void input_YearCard(String input_values) {
+		func.element_sendkey(local_driver, local_test, xpathYY, input_values);
 	}
 	
-	public void click_cfOrder(ExtentTest test) {
-		func.element_click(local_driver, test, xpathConfirmOrder);
+	public void click_cfOrder() {
+		func.element_click(local_driver, local_test, xpathConfirmOrder);
 	}
 	
-	public void MessConfirm(ExtentTest test) {
+	public void MessConfirm() {
 		try {
 			Thread.sleep(2500);
 		} catch (InterruptedException e) {
@@ -154,6 +156,6 @@ public class Page_AddCart {
 		String SetMesscf = MesscfOrder.getText();
 		System.out.println(SetMesscf);
 		Assert.assertEquals(SetMesscf, MesscfOrder.getAttribute("textContent"));
-		test.info("Compare Mess Confirmed Order");
+		local_test.info("Compare Mess Confirmed Order");
 	}
 }
