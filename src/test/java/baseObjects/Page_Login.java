@@ -30,6 +30,18 @@ public class Page_Login {
 		local_driver = driver;
 		local_test = test;
 	}
+	
+	
+	public ExtentTest getLocal_test() {
+		return local_test;
+	}
+
+
+	public void setLocal_test(ExtentTest local_test) {
+		this.local_test = local_test;
+	}
+
+
 	//handel HTML5 Validation by javascript
 	//Research from https://vntesters.com/java-webdriver-14-kiem-tra-html5-validation-message/
 	public String getHtml5ValidationMessage1(WebElement element) {

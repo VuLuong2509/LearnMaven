@@ -89,14 +89,14 @@ public class LoginUser extends CommonService{
 		Plogin.input_pass("8438126");
 		Plogin.click_login();
 		Plogin.CompareMessSuccessfuly();
+		Plogin.click_logout();
 	}
 	 
 	@Test
 	public void TC_009UserCanLogout(){
 		test = extent.createTest("TC_009UserCanLogout");
 		Plogin = ManageObj.ManageObj_Plogin_Object(driver, test);
-		Plogin.access_URL();
-		Plogin.click_logout();
+		Plogin.access_URL();		
 		Plogin.access_login();
 		Plogin.input_mail("Toi@gmail.com");
 		Plogin.input_pass("8438126");

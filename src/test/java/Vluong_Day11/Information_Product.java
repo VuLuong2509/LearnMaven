@@ -37,20 +37,20 @@ public class Information_Product extends CommonService{
         Pinfor = ManageObj.ManageObj_Pinfor_Object(driver, test);
 		Pinfor.access_URL();
 		
-		//closeAds
-		String title = "AdBlock is now installed!";
-		String CntWin = driver.getWindowHandle();
-		Set<String> windows = driver.getWindowHandles();
-		
-		for (String str : windows) {
-			driver.switchTo().window(str); 
-			System.out.println(str);
-			if (driver.getTitle().equalsIgnoreCase(title)) {
-				driver.switchTo().window(str);
-				driver.close();
-			}			
-		}		
-		driver.switchTo().window(CntWin);
+//		//closeAds
+//		String title = "AdBlock is now installed!";
+//		String CntWin = driver.getWindowHandle();
+//		Set<String> windows = driver.getWindowHandles();
+//		
+//		for (String str : windows) {
+//			driver.switchTo().window(str); 
+//			System.out.println(str);
+//			if (driver.getTitle().equalsIgnoreCase(title)) {
+//				driver.switchTo().window(str);
+//				driver.close();
+//			}			
+//		}		
+//		driver.switchTo().window(CntWin);
 		//
 		
 		Pinfor.access_linkProduct();

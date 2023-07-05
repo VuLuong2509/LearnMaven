@@ -46,6 +46,20 @@ public class Page_AddCart {
 		local_test = test;
 	}
 	
+	
+	
+	public ExtentTest getLocal_test() {
+		return local_test;
+	}
+
+
+
+	public void setLocal_test(ExtentTest local_test) {
+		this.local_test = local_test;
+	}
+
+
+
 	public void access_URL() {
 		func.open_url(local_driver, local_test, URL);
 	}

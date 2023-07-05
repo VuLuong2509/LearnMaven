@@ -18,13 +18,22 @@ public class ManageObj {
 	public static Page_Login ManageObj_Plogin_Object(WebDriver driver, ExtentTest test) {
 		if (Plogin==null) {
 			Plogin = new Page_Login(driver, test);
+		}else {
+			if(Plogin.getLocal_test()!=test) {
+				Plogin.setLocal_test(test);
+			}
 		}
+		
 		return Plogin;
 	}
 	
 	public static Page_Register ManageObj_Pregis_Object(WebDriver driver, ExtentTest test) {
 		if (Pregis==null) {
 			Pregis = new Page_Register(driver, test);
+		}else {
+			if(Pregis.getLocal_test()!= test) {
+				Pregis.setLocal_test(test);
+			}
 		}
 		return Pregis;
 	}
@@ -32,6 +41,10 @@ public class ManageObj {
 	public static Page_Infor ManageObj_Pinfor_Object(WebDriver driver, ExtentTest test) {
 		if (Pinfor==null) {
 			Pinfor = new Page_Infor(driver, test);
+		}else {
+			if(Pinfor.getLocal_test()!=test) {
+				Pinfor.setLocal_test(test);
+			}
 		}
 		return Pinfor;
 	}
@@ -39,6 +52,10 @@ public class ManageObj {
 	public static Page_AddCart ManageObj_PAdd_Object(WebDriver driver, ExtentTest test) {
 		if (PAdd==null) {
 			PAdd = new Page_AddCart(driver, test);
+		}else {
+			if(PAdd.getLocal_test()!=test) {
+				PAdd.setLocal_test(test);
+			}
 		}
 		return PAdd;
 	}

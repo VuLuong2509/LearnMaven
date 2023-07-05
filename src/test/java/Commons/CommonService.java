@@ -1,9 +1,16 @@
 package Commons;
 
 import java.io.File;
+import java.io.IOException;
+import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Set;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -32,7 +39,7 @@ public class CommonService {
 	public static WebDriver driver = null;
 	public static ExtentReports extent;
 	public static ExtentTest test = null;
-	public static CommonFunc Func = new CommonFunc();
+
 	@BeforeTest
 	@Parameters({"browser"})
 	public WebDriver Rundriver(String browser) {
@@ -45,8 +52,7 @@ public class CommonService {
 			option.addExtensions(new File("./adBlock/extension_5_6_0_0.crx")); 
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 			capabilities.setCapability(ChromeOptions.CAPABILITY, option);
-			option.merge(capabilities);
-			
+			option.merge(capabilities);			
 			option.addArguments("--remote-allow-origins=*");
 			driver = new ChromeDriver(option);
 		} else if(browser.equalsIgnoreCase("FireFox")) {
@@ -59,12 +65,11 @@ public class CommonService {
 		
 		driver.manage().window().maximize();
 		try {
-			Thread.sleep(2500);
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
 		String title = "AdBlock is now installed!";
 		String CntWin = driver.getWindowHandle();
 		Set<String> windows = driver.getWindowHandles();
@@ -77,27 +82,49 @@ public class CommonService {
 				driver.close();
 			}			
 		}
-		try {
-			Thread.sleep(2500);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
 		driver.switchTo().window(CntWin);
+		
 		return driver;				
 	}
 
+	public String screenShot(WebDriver driver) {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(45));
+		
+		File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+//		Random ran = new Random();
+//		int ranNumbername = ran.nextInt(); 
+		String new_name = "screenshot_" + getTime() + ".png";
+		try {
+			FileUtils.copyFile(screenshotFile, new File("./Report/"+new_name));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return new_name;
+	}
+	public String getTime() {
+		LocalDateTime myDateObj = LocalDateTime.now();
+	   	DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("ddMMyyyy_HHmmss");
 
+	    String formattedDate = myDateObj.format(myFormatObj);
+	  
+		return formattedDate;
+	}
 
 
 	@AfterMethod
 	public void saveAttachment(ITestResult result) {
+		
+		
+		
 		if(result.getStatus()==1) {
-			test.pass(MediaEntityBuilder.createScreenCaptureFromPath(Func.screenShot(driver)).build());
+			test.pass(MediaEntityBuilder.createScreenCaptureFromPath(screenShot(driver)).build());
 		} else if (result.getStatus()==2) {
-			test.fail(MediaEntityBuilder.createScreenCaptureFromPath(Func.screenShot(driver)).build());
+			test.fail(MediaEntityBuilder.createScreenCaptureFromPath(screenShot(driver)).build());
 		} else {
-			test.info(MediaEntityBuilder.createScreenCaptureFromPath(Func.screenShot(driver)).build());
+			test.info(MediaEntityBuilder.createScreenCaptureFromPath(screenShot(driver)).build());
 		}
 		
 		

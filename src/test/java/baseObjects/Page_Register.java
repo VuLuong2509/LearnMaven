@@ -11,6 +11,7 @@ import org.testng.Assert;
 import com.aventstack.extentreports.ExtentTest;
 
 import Commons.CommonFunc;
+import Commons.Data;
 
 public class Page_Register {
 	//Xpath Element
@@ -42,11 +43,13 @@ public class Page_Register {
 			String xpathBtnCreate = "//button[@data-qa='create-account']";
 			String xpathMesstitle = "//h2[@class='title text-center']";
 			String ExpectMessCreate = "ACCOUNT CREATED!";
-			
+			String xpathbtnContinue = "//a[@data-qa='continue-button']";	
 			String xpathLogout = "//a[@href='/logout']";
 
 			String xpathMess = "//p[@style='color: red;']";
 			String expectMess = "Email Address already exist!";
+			
+			Data excel = new Data();
 			//URL
 			String URL = "https://automationexercise.com/";			
 			CommonFunc func = new CommonFunc();
@@ -57,8 +60,21 @@ public class Page_Register {
 				local_test = test;
 			}
 			
-		
 			
+			
+			public ExtentTest getLocal_test() {
+				return local_test;
+			}
+
+
+
+			public void setLocal_test(ExtentTest local_test) {
+				this.local_test = local_test;
+			}
+
+			Random Ran = new Random();
+			Integer RanInt = Ran.nextInt(1000);
+
 			public void access_Page() {
 				func.open_url(local_driver,local_test, URL);
 			}
@@ -67,12 +83,18 @@ public class Page_Register {
 				func.element_click(local_driver,local_test, xpathLogin);
 			}
 			
-			public void input_Name(String input_values) {
-				func.element_sendkey(local_driver,local_test, xpathName, input_values);
+			public void input_Name() {
+				String readdataName = excel.DataExcel("./Resources/Data.xlsx", "Sheet2", 1, 0);
+				func.element_sendkey(local_driver,local_test, xpathName, readdataName + RanInt);
 			}
 			
-			public void input_Email(String input_values) {
-				func.element_sendkey(local_driver,local_test, xpathEmail, input_values);
+			public void input_Email() {
+				String readdataEmail = excel.DataExcel("./Resources/Data.xlsx", "Sheet2", 1, 1);
+				func.element_sendkey(local_driver,local_test, xpathEmail, readdataEmail + RanInt + "@gmail.com");
+			}
+			
+			public void input_EmailExist(String data) {
+				func.element_sendkey(local_driver, local_test, xpathEmail, data);
 			}
 			
 			public void click_btnSignUp() {
@@ -83,8 +105,9 @@ public class Page_Register {
 				func.element_click(local_driver,local_test, xpathTileInfor);
 			}
 			
-			public void input_Passinfor(String input_values) {
-				func.element_sendkey(local_driver,local_test, xpathPassInfor, input_values);
+			public void input_Passinfor() {
+				String readdataPass = excel.DataExcel("./Resources/Data.xlsx", "Sheet2", 1, 2);
+				func.element_sendkey(local_driver,local_test, xpathPassInfor, readdataPass);
 			}
 			
 			public void select_Inforday(){
@@ -109,24 +132,29 @@ public class Page_Register {
 				func.element_click(local_driver,local_test, xpathSpecialInfor);
 			}
 			
-			public void input_FistN(String input_values) {
-				func.element_sendkey(local_driver,local_test, xpathFistNinfor, input_values);
+			public void input_FistN() {
+				String readdataFirstN = excel.DataExcel("./Resources/Data.xlsx", "Sheet2", 1, 3);
+				func.element_sendkey(local_driver,local_test, xpathFistNinfor, readdataFirstN);
 			}
 			
-			public void input_LastN(String input_values) {
-				func.element_sendkey(local_driver,local_test, xpathLastNinfor, input_values);
+			public void input_LastN() {
+				String readdataLastN = excel.DataExcel("./Resources/Data.xlsx", "Sheet2", 1, 4);
+				func.element_sendkey(local_driver,local_test, xpathLastNinfor, readdataLastN);
 			}
 			
-			public void input_Company(String input_values) {
-				func.element_sendkey(local_driver,local_test, xpathCompanyInfor, input_values);
+			public void input_Company() {
+				String readdataCompany = excel.DataExcel("./Resources/Data.xlsx", "Sheet2", 1, 5);
+				func.element_sendkey(local_driver,local_test, xpathCompanyInfor, readdataCompany);
 			}
 			
-			public void input_Address1(String input_values) {
-				func.element_sendkey(local_driver,local_test, xpathAddress1Infor, input_values);
+			public void input_Address1() {
+				String readdataAddress1 = excel.DataExcel("./Resources/Data.xlsx", "Sheet2", 1, 6);
+				func.element_sendkey(local_driver,local_test, xpathAddress1Infor, readdataAddress1);
 			}
 			
-			public void input_Address2(String input_values) {
-				func.element_sendkey(local_driver,local_test, xpathAddress2Infor, input_values);
+			public void input_Address2() {
+				String readdataAddress2 = excel.DataExcel("./Resources/Data.xlsx", "Sheet2", 1, 7);
+				func.element_sendkey(local_driver,local_test, xpathAddress2Infor, readdataAddress2);
 			}
 			
 			public void select_Country() {
@@ -135,20 +163,24 @@ public class Page_Register {
 				func.element_select(local_driver, local_test, xpathCountryInfor, ranCountry);
 			}
 			
-			public void input_State(String input_values) {
-				func.element_sendkey(local_driver,local_test, xpathStateInfor, input_values);
+			public void input_State() {
+				String readdataState = excel.DataExcel("./Resources/Data.xlsx", "Sheet2", 1, 8);
+				func.element_sendkey(local_driver,local_test, xpathStateInfor, readdataState);
 			}
 			
-			public void input_City(String input_values) {
-				func.element_sendkey(local_driver,local_test, xpathCityInfor, input_values);
+			public void input_City() {
+				String readdataCity = excel.DataExcel("./Resources/Data.xlsx", "Sheet2", 1, 9);
+				func.element_sendkey(local_driver,local_test, xpathCityInfor, readdataCity);
 			}
 			
-			public void input_Zip(String input_values) {
-				func.element_sendkey(local_driver,local_test, xpathZipInfor, input_values);
+			public void input_Zip() {
+				String readdataZip = excel.DataExcel("./Resources/Data.xlsx", "Sheet2", 1, 10);
+				func.element_sendkey(local_driver,local_test, xpathZipInfor, readdataZip);
 			}
 			
-			public void input_Number(String input_values) {
-				func.element_sendkey(local_driver,local_test, xpathphoneNumInfor, input_values);
+			public void input_Number() {
+				String readdataNumber = excel.DataExcel("./Resources/Data.xlsx", "Sheet2", 1, 11);
+				func.element_sendkey(local_driver,local_test, xpathphoneNumInfor, readdataNumber + RanInt);
 			}
 			
 			public void compare_MessExist() {
@@ -172,9 +204,21 @@ public class Page_Register {
 				}
 			}
 			
+			public void click_Continue() {
+				func.element_click(local_driver, local_test, xpathbtnContinue);
+			}
+			
 			public void compare_MessCreate() {
 				WebElement eleMess = local_driver.findElement(By.xpath(xpathMesstitle));
 				String ActualMess = eleMess.getText();
 				Assert.assertEquals(ActualMess, ExpectMessCreate);
+			}
+			
+			public void Wail_ele_logout() {
+				func.Wait_element(local_driver, xpathLogout);
+			}
+			
+			public void Wait_Ele() {
+				func.Wait_ele(local_driver);
 			}
 }

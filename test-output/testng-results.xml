@@ -1,13 +1,214 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="7" passed="6">
+<testng-results skipped="0" failed="0" ignored="6" total="21" passed="15">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="73848" started-at="2023-07-01T16:58:20 ICT" finished-at="2023-07-01T16:59:34 ICT">
+  <suite name="Suite1" duration-ms="132410" started-at="2023-07-05T17:28:25 ICT" finished-at="2023-07-05T17:30:38 ICT">
     <groups>
     </groups>
-    <test name="RunCC" duration-ms="73848" started-at="2023-07-01T16:58:20 ICT" finished-at="2023-07-01T16:59:34 ICT">
+    <test name="RunCC" duration-ms="132410" started-at="2023-07-05T17:28:25 ICT" finished-at="2023-07-05T17:30:38 ICT">
+      <class name="Vluong_Day11.Information_Product">
+        <test-method status="PASS" signature="TC_010InforItemWomen()[pri:0, instance:Vluong_Day11.Information_Product@2de8284b]" name="TC_010InforItemWomen" duration-ms="17366" started-at="2023-07-05T17:29:47 ICT" finished-at="2023-07-05T17:30:04 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_010InforItemWomen -->
+        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.Information_Product@2de8284b]" name="saveAttachment" is-config="true" duration-ms="232" started-at="2023-07-05T17:30:04 ICT" finished-at="2023-07-05T17:30:05 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_010InforItemWomen status=SUCCESS method=Information_Product.TC_010InforItemWomen()[pri:0, instance:Vluong_Day11.Information_Product@2de8284b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveAttachment -->
+      </class> <!-- Vluong_Day11.Information_Product -->
       <class name="Vluong_Day11.LoginUser">
-        <test-method status="PASS" signature="Rundriver(java.lang.String)[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="Rundriver" is-config="true" duration-ms="9482" started-at="2023-07-01T16:58:20 ICT" finished-at="2023-07-01T16:58:30 ICT">
+        <test-method status="PASS" signature="TC_003LoginWithWrongFormatEmail()[pri:0, instance:Vluong_Day11.LoginUser@78ac1102]" name="TC_003LoginWithWrongFormatEmail" duration-ms="4548" started-at="2023-07-05T17:29:03 ICT" finished-at="2023-07-05T17:29:08 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_003LoginWithWrongFormatEmail -->
+        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.LoginUser@78ac1102]" name="saveAttachment" is-config="true" duration-ms="331" started-at="2023-07-05T17:29:08 ICT" finished-at="2023-07-05T17:29:08 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_003LoginWithWrongFormatEmail status=SUCCESS method=LoginUser.TC_003LoginWithWrongFormatEmail()[pri:0, instance:Vluong_Day11.LoginUser@78ac1102] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveAttachment -->
+        <test-method status="PASS" signature="TC_004LoginWithEmtyEmail()[pri:0, instance:Vluong_Day11.LoginUser@78ac1102]" name="TC_004LoginWithEmtyEmail" duration-ms="3140" started-at="2023-07-05T17:29:08 ICT" finished-at="2023-07-05T17:29:12 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_004LoginWithEmtyEmail -->
+        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.LoginUser@78ac1102]" name="saveAttachment" is-config="true" duration-ms="235" started-at="2023-07-05T17:29:12 ICT" finished-at="2023-07-05T17:29:12 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_004LoginWithEmtyEmail status=SUCCESS method=LoginUser.TC_004LoginWithEmtyEmail()[pri:0, instance:Vluong_Day11.LoginUser@78ac1102] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveAttachment -->
+        <test-method status="PASS" signature="TC_005LoginWithEmtyPass()[pri:0, instance:Vluong_Day11.LoginUser@78ac1102]" name="TC_005LoginWithEmtyPass" duration-ms="4966" started-at="2023-07-05T17:29:12 ICT" finished-at="2023-07-05T17:29:17 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_005LoginWithEmtyPass -->
+        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.LoginUser@78ac1102]" name="saveAttachment" is-config="true" duration-ms="239" started-at="2023-07-05T17:29:17 ICT" finished-at="2023-07-05T17:29:17 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_005LoginWithEmtyPass status=SUCCESS method=LoginUser.TC_005LoginWithEmtyPass()[pri:0, instance:Vluong_Day11.LoginUser@78ac1102] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveAttachment -->
+        <test-method status="PASS" signature="TC_006LoginWithWrongEmail()[pri:0, instance:Vluong_Day11.LoginUser@78ac1102]" name="TC_006LoginWithWrongEmail" duration-ms="4228" started-at="2023-07-05T17:29:17 ICT" finished-at="2023-07-05T17:29:21 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_006LoginWithWrongEmail -->
+        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.LoginUser@78ac1102]" name="saveAttachment" is-config="true" duration-ms="206" started-at="2023-07-05T17:29:21 ICT" finished-at="2023-07-05T17:29:21 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_006LoginWithWrongEmail status=SUCCESS method=LoginUser.TC_006LoginWithWrongEmail()[pri:0, instance:Vluong_Day11.LoginUser@78ac1102] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveAttachment -->
+        <test-method status="PASS" signature="TC_007LoginWithWrongPass()[pri:0, instance:Vluong_Day11.LoginUser@78ac1102]" name="TC_007LoginWithWrongPass" duration-ms="4181" started-at="2023-07-05T17:29:21 ICT" finished-at="2023-07-05T17:29:26 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_007LoginWithWrongPass -->
+        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.LoginUser@78ac1102]" name="saveAttachment" is-config="true" duration-ms="235" started-at="2023-07-05T17:29:26 ICT" finished-at="2023-07-05T17:29:26 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_007LoginWithWrongPass status=SUCCESS method=LoginUser.TC_007LoginWithWrongPass()[pri:0, instance:Vluong_Day11.LoginUser@78ac1102] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveAttachment -->
+        <test-method status="PASS" signature="TC_008LoginSuccessfuly()[pri:0, instance:Vluong_Day11.LoginUser@78ac1102]" name="TC_008LoginSuccessfuly" duration-ms="5960" started-at="2023-07-05T17:29:26 ICT" finished-at="2023-07-05T17:29:32 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_008LoginSuccessfuly -->
+        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.LoginUser@78ac1102]" name="saveAttachment" is-config="true" duration-ms="206" started-at="2023-07-05T17:29:32 ICT" finished-at="2023-07-05T17:29:32 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_008LoginSuccessfuly status=SUCCESS method=LoginUser.TC_008LoginSuccessfuly()[pri:0, instance:Vluong_Day11.LoginUser@78ac1102] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveAttachment -->
+        <test-method status="PASS" signature="TC_009UserCanLogout()[pri:0, instance:Vluong_Day11.LoginUser@78ac1102]" name="TC_009UserCanLogout" duration-ms="14830" started-at="2023-07-05T17:29:32 ICT" finished-at="2023-07-05T17:29:47 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_009UserCanLogout -->
+        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.LoginUser@78ac1102]" name="saveAttachment" is-config="true" duration-ms="210" started-at="2023-07-05T17:29:47 ICT" finished-at="2023-07-05T17:29:47 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_009UserCanLogout status=SUCCESS method=LoginUser.TC_009UserCanLogout()[pri:0, instance:Vluong_Day11.LoginUser@78ac1102] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveAttachment -->
+      </class> <!-- Vluong_Day11.LoginUser -->
+      <class name="Vluong_Day11.AddCart">
+        <test-method status="PASS" signature="TC_011VerifySubscriptioninCartpage()[pri:0, instance:Vluong_Day11.AddCart@396e2f39]" name="TC_011VerifySubscriptioninCartpage" duration-ms="3825" started-at="2023-07-05T17:30:05 ICT" finished-at="2023-07-05T17:30:08 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_011VerifySubscriptioninCartpage -->
+        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.AddCart@396e2f39]" name="saveAttachment" is-config="true" duration-ms="358" started-at="2023-07-05T17:30:08 ICT" finished-at="2023-07-05T17:30:09 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_011VerifySubscriptioninCartpage status=SUCCESS method=AddCart.TC_011VerifySubscriptioninCartpage()[pri:0, instance:Vluong_Day11.AddCart@396e2f39] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveAttachment -->
+        <test-method status="PASS" signature="TC_012VerifyMoreProductsOfTheSametype()[pri:0, instance:Vluong_Day11.AddCart@396e2f39]" name="TC_012VerifyMoreProductsOfTheSametype" duration-ms="2396" started-at="2023-07-05T17:30:09 ICT" finished-at="2023-07-05T17:30:11 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_012VerifyMoreProductsOfTheSametype -->
+        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.AddCart@396e2f39]" name="saveAttachment" is-config="true" duration-ms="347" started-at="2023-07-05T17:30:11 ICT" finished-at="2023-07-05T17:30:12 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_012VerifyMoreProductsOfTheSametype status=SUCCESS method=AddCart.TC_012VerifyMoreProductsOfTheSametype()[pri:0, instance:Vluong_Day11.AddCart@396e2f39] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveAttachment -->
+        <test-method status="PASS" signature="TC_013VerifyProductsQuantityInCart()[pri:0, instance:Vluong_Day11.AddCart@396e2f39]" name="TC_013VerifyProductsQuantityInCart" duration-ms="3666" started-at="2023-07-05T17:30:12 ICT" finished-at="2023-07-05T17:30:15 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_013VerifyProductsQuantityInCart -->
+        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.AddCart@396e2f39]" name="saveAttachment" is-config="true" duration-ms="199" started-at="2023-07-05T17:30:15 ICT" finished-at="2023-07-05T17:30:15 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_013VerifyProductsQuantityInCart status=SUCCESS method=AddCart.TC_013VerifyProductsQuantityInCart()[pri:0, instance:Vluong_Day11.AddCart@396e2f39] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveAttachment -->
+        <test-method status="PASS" signature="TC_014VerifyRemoveProductsInCart()[pri:0, instance:Vluong_Day11.AddCart@396e2f39]" name="TC_014VerifyRemoveProductsInCart" duration-ms="5078" started-at="2023-07-05T17:30:15 ICT" finished-at="2023-07-05T17:30:20 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_014VerifyRemoveProductsInCart -->
+        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.AddCart@396e2f39]" name="saveAttachment" is-config="true" duration-ms="202" started-at="2023-07-05T17:30:20 ICT" finished-at="2023-07-05T17:30:21 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_014VerifyRemoveProductsInCart status=SUCCESS method=AddCart.TC_014VerifyRemoveProductsInCart()[pri:0, instance:Vluong_Day11.AddCart@396e2f39] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveAttachment -->
+        <test-method status="PASS" signature="TC_015VerifyCheckOutInCart()[pri:0, instance:Vluong_Day11.AddCart@396e2f39]" name="TC_015VerifyCheckOutInCart" duration-ms="15286" started-at="2023-07-05T17:30:21 ICT" finished-at="2023-07-05T17:30:36 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_015VerifyCheckOutInCart -->
+        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.AddCart@396e2f39]" name="saveAttachment" is-config="true" duration-ms="217" started-at="2023-07-05T17:30:36 ICT" finished-at="2023-07-05T17:30:36 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_015VerifyCheckOutInCart status=SUCCESS method=AddCart.TC_015VerifyCheckOutInCart()[pri:0, instance:Vluong_Day11.AddCart@396e2f39] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveAttachment -->
+      </class> <!-- Vluong_Day11.AddCart -->
+      <class name="Vluong_Day11.RegisterUser">
+        <test-method status="PASS" signature="Rundriver(java.lang.String)[pri:0, instance:Vluong_Day11.RegisterUser@c81cdd1]" name="Rundriver" is-config="true" duration-ms="9182" started-at="2023-07-05T17:28:25 ICT" finished-at="2023-07-05T17:28:34 ICT">
           <params>
             <param index="0">
               <value>
@@ -18,189 +219,41 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Rundriver -->
-        <test-method status="PASS" signature="TC_003LoginWithWrongFormatEmail()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="TC_003LoginWithWrongFormatEmail" duration-ms="5329" started-at="2023-07-01T16:58:30 ICT" finished-at="2023-07-01T16:58:35 ICT">
+        <test-method status="PASS" signature="TC_001RegisterNewUser()[pri:0, instance:Vluong_Day11.RegisterUser@c81cdd1]" name="TC_001RegisterNewUser" duration-ms="21992" started-at="2023-07-05T17:28:34 ICT" finished-at="2023-07-05T17:28:56 ICT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_003LoginWithWrongFormatEmail -->
-        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="saveAttachment" is-config="true" duration-ms="3052" started-at="2023-07-01T16:58:35 ICT" finished-at="2023-07-01T16:58:38 ICT">
+        </test-method> <!-- TC_001RegisterNewUser -->
+        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.RegisterUser@c81cdd1]" name="saveAttachment" is-config="true" duration-ms="456" started-at="2023-07-05T17:28:56 ICT" finished-at="2023-07-05T17:28:57 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_003LoginWithWrongFormatEmail status=SUCCESS method=LoginUser.TC_003LoginWithWrongFormatEmail()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf] output={null}]]]>
+                <![CDATA[[TestResult name=TC_001RegisterNewUser status=SUCCESS method=RegisterUser.TC_001RegisterNewUser()[pri:0, instance:Vluong_Day11.RegisterUser@c81cdd1] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- saveAttachment -->
-        <test-method status="PASS" signature="TC_004LoginWithEmtyEmail()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="TC_004LoginWithEmtyEmail" duration-ms="5266" started-at="2023-07-01T16:58:38 ICT" finished-at="2023-07-01T16:58:44 ICT">
+        <test-method status="PASS" signature="TC_002RegisterNewUserWithExistingEmail()[pri:0, instance:Vluong_Day11.RegisterUser@c81cdd1]" name="TC_002RegisterNewUserWithExistingEmail" duration-ms="6381" started-at="2023-07-05T17:28:57 ICT" finished-at="2023-07-05T17:29:03 ICT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_004LoginWithEmtyEmail -->
-        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="saveAttachment" is-config="true" duration-ms="2733" started-at="2023-07-01T16:58:44 ICT" finished-at="2023-07-01T16:58:46 ICT">
+        </test-method> <!-- TC_002RegisterNewUserWithExistingEmail -->
+        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.RegisterUser@c81cdd1]" name="saveAttachment" is-config="true" duration-ms="217" started-at="2023-07-05T17:29:03 ICT" finished-at="2023-07-05T17:29:03 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_004LoginWithEmtyEmail status=SUCCESS method=LoginUser.TC_004LoginWithEmtyEmail()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf] output={null}]]]>
+                <![CDATA[[TestResult name=TC_002RegisterNewUserWithExistingEmail status=SUCCESS method=RegisterUser.TC_002RegisterNewUserWithExistingEmail()[pri:0, instance:Vluong_Day11.RegisterUser@c81cdd1] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- saveAttachment -->
-        <test-method status="PASS" signature="TC_005LoginWithEmtyPass()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="TC_005LoginWithEmtyPass" duration-ms="5325" started-at="2023-07-01T16:58:46 ICT" finished-at="2023-07-01T16:58:52 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_005LoginWithEmtyPass -->
-        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="saveAttachment" is-config="true" duration-ms="2739" started-at="2023-07-01T16:58:52 ICT" finished-at="2023-07-01T16:58:54 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_005LoginWithEmtyPass status=SUCCESS method=LoginUser.TC_005LoginWithEmtyPass()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saveAttachment -->
-        <test-method status="PASS" signature="TC_006LoginWithWrongEmail()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="TC_006LoginWithWrongEmail" duration-ms="5005" started-at="2023-07-01T16:58:54 ICT" finished-at="2023-07-01T16:58:59 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_006LoginWithWrongEmail -->
-        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="saveAttachment" is-config="true" duration-ms="2718" started-at="2023-07-01T16:58:59 ICT" finished-at="2023-07-01T16:59:02 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_006LoginWithWrongEmail status=SUCCESS method=LoginUser.TC_006LoginWithWrongEmail()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saveAttachment -->
-        <test-method status="PASS" signature="TC_007LoginWithWrongPass()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="TC_007LoginWithWrongPass" duration-ms="11162" started-at="2023-07-01T16:59:02 ICT" finished-at="2023-07-01T16:59:13 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_007LoginWithWrongPass -->
-        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="saveAttachment" is-config="true" duration-ms="2722" started-at="2023-07-01T16:59:13 ICT" finished-at="2023-07-01T16:59:16 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_007LoginWithWrongPass status=SUCCESS method=LoginUser.TC_007LoginWithWrongPass()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saveAttachment -->
-        <test-method status="PASS" signature="TC_008LoginSuccessfuly()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="TC_008LoginSuccessfuly" duration-ms="7230" started-at="2023-07-01T16:59:16 ICT" finished-at="2023-07-01T16:59:23 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_008LoginSuccessfuly -->
-        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="saveAttachment" is-config="true" duration-ms="2845" started-at="2023-07-01T16:59:23 ICT" finished-at="2023-07-01T16:59:26 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_008LoginSuccessfuly status=SUCCESS method=LoginUser.TC_008LoginSuccessfuly()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saveAttachment -->
-        <test-method status="FAIL" signature="TC_009UserCanLogout()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="TC_009UserCanLogout" duration-ms="4647" started-at="2023-07-01T16:59:26 ICT" finished-at="2023-07-01T16:59:31 ICT">
-          <exception class="org.openqa.selenium.InvalidSelectorException">
-            <message>
-              <![CDATA[invalid selector: Unable to locate an element with the xpath expression //a[@href='/logout'], because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//a[@href='/logout'],' is not a valid XPath expression.
-  (Session info: chrome=114.0.5735.199)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_361'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9ffac7576eba0fd50e5bf1d82b97e143, findElement {using=xpath, value=//a[@href='/logout'],}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VuLuong\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54618}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54618/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9ffac7576eba0fd50e5bf1d82b97e143]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //a[@href='/logout'], because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//a[@href='/logout'],' is not a valid XPath expression.
-  (Session info: chrome=114.0.5735.199)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_361'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9ffac7576eba0fd50e5bf1d82b97e143, findElement {using=xpath, value=//a[@href='/logout'],}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\VuLuong\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54618}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54618/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9ffac7576eba0fd50e5bf1d82b97e143
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at Commons.CommonFunc.element_click(CommonFunc.java:59)
-at baseObjects.Page_Login.click_logout(Page_Login.java:62)
-at Vluong_Day11.LoginUser.TC_009UserCanLogout(LoginUser.java:99)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_009UserCanLogout -->
-        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="saveAttachment" is-config="true" duration-ms="2836" started-at="2023-07-01T16:59:31 ICT" finished-at="2023-07-01T16:59:33 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_009UserCanLogout status=FAILURE method=LoginUser.TC_009UserCanLogout()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saveAttachment -->
-        <test-method status="PASS" signature="AfterRun()[pri:0, instance:Vluong_Day11.LoginUser@13eb8acf]" name="AfterRun" is-config="true" duration-ms="722" started-at="2023-07-01T16:59:33 ICT" finished-at="2023-07-01T16:59:34 ICT">
+        <test-method status="PASS" signature="AfterRun()[pri:0, instance:Vluong_Day11.RegisterUser@c81cdd1]" name="AfterRun" is-config="true" duration-ms="1459" started-at="2023-07-05T17:30:36 ICT" finished-at="2023-07-05T17:30:38 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterRun -->
-      </class> <!-- Vluong_Day11.LoginUser -->
+      </class> <!-- Vluong_Day11.RegisterUser -->
     </test> <!-- RunCC -->
   </suite> <!-- Suite1 -->
 </testng-results>

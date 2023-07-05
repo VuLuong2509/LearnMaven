@@ -24,36 +24,6 @@ import org.openqa.selenium.support.ui.Wait;
 import com.aventstack.extentreports.ExtentTest;
 
 public class CommonFunc {
-	public String screenShot(WebDriver driver) {
-		try {
-			Thread.sleep(2500);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-//		Random ran = new Random();
-//		int ranNumbername = ran.nextInt(); 
-		String new_name = "screenshot_" + getTime() + ".png";
-		try {
-			FileUtils.copyFile(screenshotFile, new File("./Report/"+new_name));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		return new_name;
-	}
-	
-	public String getTime() {
-		LocalDateTime myDateObj = LocalDateTime.now();
-	   	DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("ddMMyyyy_HHmmss");
-
-	    String formattedDate = myDateObj.format(myFormatObj);
-	  
-		return formattedDate;
-	}
 	
 	public void open_url(WebDriver driver, ExtentTest test,String url) {
 		test.info("Go to URL" + url);
@@ -68,8 +38,8 @@ public class CommonFunc {
 	
 	public void element_sendkey(WebDriver driver, ExtentTest test, String xpath, String data) {
 		WebElement ele_sendkey = driver.findElement(By.xpath(xpath));
-		ele_sendkey.sendKeys(data);
-		test.info( ele_sendkey.getAttribute("value" + "Enter: "));
+		test.info("Enter: " + data + ele_sendkey.getAttribute("textContent"));
+		ele_sendkey.sendKeys(data);		
 	}
 	
 	public String getAttributeValues(WebDriver driver, String xpath, String attributeName) {
@@ -91,21 +61,30 @@ public class CommonFunc {
 		Select_ele.selectByIndex(values);
 	}
 	
-//	public void Wait_element(WebDriver driver, String xpath) {
-//		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
-//				  .withTimeout(Duration.ofSeconds (30)) // thoi gian cho toi da ( implicit + explicit wait deu co)
-//				  .pollingEvery(Duration.ofSeconds(1 )) //15 // config tan suat check ele
-//				  .ignoring(NoSuchElementException.class); // ke exception no such
-//		
-//		WebElement ele = wait.until(new Function<WebDriver, WebElement>() {
-//	         // customized condition for fluent wait
-//	         public WebElement apply(WebDriver driver) {
-//	            if (driver.findElement(By.xpath(xpath))!=null) 
-//	            	return driver.findElement(By.xpath(xpath));
-//				return null;
-//	         }
-//	      });
-//	}
+	public void Wait_element(WebDriver driver, String xpath) {
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+				  .withTimeout(Duration.ofSeconds (30)) // thoi gian cho toi da ( implicit + explicit wait deu co)
+				  .pollingEvery(Duration.ofSeconds(1 )) //15 // config tan suat check ele
+				  .ignoring(NoSuchElementException.class); // ke exception no such
+		
+		WebElement ele = wait.until(new Function<WebDriver, WebElement>() {
+	         // customized condition for fluent wait
+	         public WebElement apply(WebDriver driver, String xpath) {
+	            if (driver.findElement(By.xpath(xpath))!=null) 
+	            	return driver.findElement(By.xpath(xpath));
+				return null;
+	         }
+
+			public WebElement apply(WebDriver t) {
+				// TODO Auto-generated method stub
+				return null;
+			}
+	      });
+	}
+	
+	public void Wait_ele(WebDriver driver) {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(45));
+	}
 
 
 }

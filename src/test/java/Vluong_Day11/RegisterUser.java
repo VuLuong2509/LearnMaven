@@ -31,45 +31,43 @@ public class RegisterUser extends CommonService{
 	@Test
 	public void TC_001RegisterNewUser() {
 		test = extent.createTest("TC_001RegisterNewUser");
-		Pregis = ManageObj.ManageObj_Pregis_Object(driver, test);
-		// Random
-		Random Ran = new Random();
-		Integer RanInt = Ran.nextInt(1000);			
+		Pregis = ManageObj.ManageObj_Pregis_Object(driver, test);	
 		// Teststep
 		Pregis.access_Page();				
 		Pregis.click_linkLogin();
-		Pregis.input_Name("Toivat" + RanInt);				
-		Pregis.input_Email("Toivaot" + RanInt + "@gmail.com");
+		Pregis.input_Name();				
+		Pregis.input_Email();
 		Pregis.click_btnSignUp();
 		Pregis.click_RaTitle();
-		test.info("Click Title");
-		Pregis.input_Passinfor("Abc123456");		
+		Pregis.input_Passinfor();		
 		Pregis.select_Inforday();
 		Pregis.click_Special();
-		Pregis.input_FistN("Luong");
-		Pregis.input_LastN("Vu");
-		Pregis.input_Company("AutoLearn");
-		Pregis.input_Address1("1st Wesminter");
-		Pregis.input_Address2("2nd Wesminter");
+		Pregis.input_FistN();
+		Pregis.input_LastN();
+		Pregis.input_Company();
+		Pregis.input_Address1();
+		Pregis.input_Address2();
 		Pregis.select_Country();		
-		Pregis.input_State("Something");
-		Pregis.input_City("HCM");
-		Pregis.input_Zip("70000");
-		Pregis.input_Number("090762" + RanInt);
-
+		Pregis.input_State();
+		Pregis.input_City();
+		Pregis.input_Zip();
+		Pregis.input_Number();
 		Pregis.click_BtnCreate();
 		Pregis.compare_MessCreate();
+		Pregis.click_Continue();
+//		Pregis.Wail_ele_logout();
+		Pregis.Wait_Ele();
+		Pregis.click_logout();
 	}
 	
 	@Test
 	public void TC_002RegisterNewUserWithExistingEmail() {
 		test = extent.createTest("TC_002RegisterNewUserWithExistingEmail");
 		Pregis = ManageObj.ManageObj_Pregis_Object(driver, test);
-		Pregis.access_Page();
-		Pregis.click_logout();
+		Pregis.access_Page();	
 		Pregis.click_linkLogin();
-		Pregis.input_Name("Toivat");
-		Pregis.input_Email("Toi@gmail.com");
+		Pregis.input_Name();
+		Pregis.input_EmailExist("Toi@gmail.com");
 		Pregis.click_btnSignUp();		
 		Pregis.compare_MessExist();
 	}
