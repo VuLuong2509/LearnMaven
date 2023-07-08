@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="Suite1" verbose="1">
+  <test name="RunCC" >
+	<parameter name="browser"  value="Chrome"/>
+    <classes>
+
+	<class name="Vluong_Day11.RegisterUser" />
+	<class name="Vluong_Day11.LoginUser" />
+    </classes>
+  </test>
+  
+<!--     <test name="RunFF" >
+	<parameter name="browser"  value="FireFox"/>
+    <classes>
+    	<class name="Vluong_Day11.RegisterUser" />
+    </classes>
+  </test> -->
+  
+<!--       <test name="RunEd" >
+	<parameter name="browser"  value="Ed"/>
+    <classes>
+    	<class name="Vluong_Day11.RegisterUser" />
+    </classes>
+  </test> -->
+</suite>
+
