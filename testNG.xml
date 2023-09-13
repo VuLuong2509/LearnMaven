@@ -2,16 +2,28 @@
   
 <suite name="Suite1" verbose="1">
   <test name="RunCC" >
+  	<parameter name="platform" value="web" />
 	<parameter name="browser"  value="Chrome"/>
     <classes>
 
-	<class name="Vluong_Day11.RegisterUser" />
-	<class name="Vluong_Day11.LoginUser" />
-	<class name="Vluong_Day11.Information_Product" />
+<!-- 	<class name="Vluong_Day11.RegisterUser" /> -->
+<!-- 	<class name="Vluong_Day11.LoginUser" /> -->
+<!-- 	<class name="Vluong_Day11.Information_Product" /> -->
 	<class name="Vluong_Day11.AddCart" />
     </classes>
   </test>
   
+  
+  
+  <test name="RunMobile">
+		<parameter name="platform" value="mobile" />
+		<parameter name="browser" value="Chrome" />
+		<classes>
+
+			<class name="Vluong_Day11.Appium_Action" />
+
+		</classes>
+	</test>
 <!--     <test name="RunFF" >
 	<parameter name="browser"  value="FireFox"/>
     <classes>

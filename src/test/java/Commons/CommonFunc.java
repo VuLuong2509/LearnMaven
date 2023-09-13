@@ -23,6 +23,8 @@ import org.openqa.selenium.support.ui.Wait;
 
 import com.aventstack.extentreports.ExtentTest;
 
+import io.appium.java_client.android.AndroidDriver;
+
 public class CommonFunc {
 	
 	public void open_url(WebDriver driver, ExtentTest test,String url) {
@@ -30,9 +32,17 @@ public class CommonFunc {
 		driver.get(url);
 	}
 	
-	public void element_click(WebDriver driver, ExtentTest test, String xpath) {
-		WebElement btn = driver.findElement(By.xpath(xpath));
-		test.info("click btn:" + btn.getAttribute("textContent"));
+	public void element_click(Object driver, ExtentTest test, String xpath) {
+		WebElement btn = null;
+		
+		if (driver instanceof AndroidDriver) {
+			btn = ((AndroidDriver) driver).findElement(By.xpath(xpath));
+			test.info("Click btn"+xpath);
+		} else {
+			btn = ((WebDriver)driver).findElement(By.xpath(xpath));
+			test.info("click btn:" + btn.getAttribute("textContent"));
+		}
+		
 		btn.click();
 	}
 	

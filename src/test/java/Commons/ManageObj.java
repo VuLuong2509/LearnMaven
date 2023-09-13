@@ -4,16 +4,19 @@ import org.openqa.selenium.WebDriver;
 
 import com.aventstack.extentreports.ExtentTest;
 
+
 import baseObjects.Page_AddCart;
 import baseObjects.Page_Infor;
 import baseObjects.Page_Login;
 import baseObjects.Page_Register;
+
 
 public class ManageObj {
 	public static Page_Login Plogin;
 	public static Page_Register Pregis;
 	public static Page_Infor Pinfor;
 	public static Page_AddCart PAdd;
+
 	
 	public static Page_Login ManageObj_Plogin_Object(WebDriver driver, ExtentTest test) {
 		if (Plogin==null) {
@@ -59,5 +62,5 @@ public class ManageObj {
 		}
 		return PAdd;
 	}
-
+	
 }

@@ -1,216 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="6" total="21" passed="15">
+<testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="132410" started-at="2023-07-05T17:28:25 ICT" finished-at="2023-07-05T17:30:38 ICT">
+  <suite name="Suite1" duration-ms="83630" started-at="2023-09-13T01:52:13 ICT" finished-at="2023-09-13T01:53:37 ICT">
     <groups>
     </groups>
-    <test name="RunCC" duration-ms="132410" started-at="2023-07-05T17:28:25 ICT" finished-at="2023-07-05T17:30:38 ICT">
-      <class name="Vluong_Day11.Information_Product">
-        <test-method status="PASS" signature="TC_010InforItemWomen()[pri:0, instance:Vluong_Day11.Information_Product@2de8284b]" name="TC_010InforItemWomen" duration-ms="17366" started-at="2023-07-05T17:29:47 ICT" finished-at="2023-07-05T17:30:04 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_010InforItemWomen -->
-        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.Information_Product@2de8284b]" name="saveAttachment" is-config="true" duration-ms="232" started-at="2023-07-05T17:30:04 ICT" finished-at="2023-07-05T17:30:05 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_010InforItemWomen status=SUCCESS method=Information_Product.TC_010InforItemWomen()[pri:0, instance:Vluong_Day11.Information_Product@2de8284b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saveAttachment -->
-      </class> <!-- Vluong_Day11.Information_Product -->
-      <class name="Vluong_Day11.LoginUser">
-        <test-method status="PASS" signature="TC_003LoginWithWrongFormatEmail()[pri:0, instance:Vluong_Day11.LoginUser@78ac1102]" name="TC_003LoginWithWrongFormatEmail" duration-ms="4548" started-at="2023-07-05T17:29:03 ICT" finished-at="2023-07-05T17:29:08 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_003LoginWithWrongFormatEmail -->
-        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.LoginUser@78ac1102]" name="saveAttachment" is-config="true" duration-ms="331" started-at="2023-07-05T17:29:08 ICT" finished-at="2023-07-05T17:29:08 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_003LoginWithWrongFormatEmail status=SUCCESS method=LoginUser.TC_003LoginWithWrongFormatEmail()[pri:0, instance:Vluong_Day11.LoginUser@78ac1102] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saveAttachment -->
-        <test-method status="PASS" signature="TC_004LoginWithEmtyEmail()[pri:0, instance:Vluong_Day11.LoginUser@78ac1102]" name="TC_004LoginWithEmtyEmail" duration-ms="3140" started-at="2023-07-05T17:29:08 ICT" finished-at="2023-07-05T17:29:12 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_004LoginWithEmtyEmail -->
-        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.LoginUser@78ac1102]" name="saveAttachment" is-config="true" duration-ms="235" started-at="2023-07-05T17:29:12 ICT" finished-at="2023-07-05T17:29:12 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_004LoginWithEmtyEmail status=SUCCESS method=LoginUser.TC_004LoginWithEmtyEmail()[pri:0, instance:Vluong_Day11.LoginUser@78ac1102] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saveAttachment -->
-        <test-method status="PASS" signature="TC_005LoginWithEmtyPass()[pri:0, instance:Vluong_Day11.LoginUser@78ac1102]" name="TC_005LoginWithEmtyPass" duration-ms="4966" started-at="2023-07-05T17:29:12 ICT" finished-at="2023-07-05T17:29:17 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_005LoginWithEmtyPass -->
-        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.LoginUser@78ac1102]" name="saveAttachment" is-config="true" duration-ms="239" started-at="2023-07-05T17:29:17 ICT" finished-at="2023-07-05T17:29:17 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_005LoginWithEmtyPass status=SUCCESS method=LoginUser.TC_005LoginWithEmtyPass()[pri:0, instance:Vluong_Day11.LoginUser@78ac1102] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saveAttachment -->
-        <test-method status="PASS" signature="TC_006LoginWithWrongEmail()[pri:0, instance:Vluong_Day11.LoginUser@78ac1102]" name="TC_006LoginWithWrongEmail" duration-ms="4228" started-at="2023-07-05T17:29:17 ICT" finished-at="2023-07-05T17:29:21 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_006LoginWithWrongEmail -->
-        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.LoginUser@78ac1102]" name="saveAttachment" is-config="true" duration-ms="206" started-at="2023-07-05T17:29:21 ICT" finished-at="2023-07-05T17:29:21 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_006LoginWithWrongEmail status=SUCCESS method=LoginUser.TC_006LoginWithWrongEmail()[pri:0, instance:Vluong_Day11.LoginUser@78ac1102] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saveAttachment -->
-        <test-method status="PASS" signature="TC_007LoginWithWrongPass()[pri:0, instance:Vluong_Day11.LoginUser@78ac1102]" name="TC_007LoginWithWrongPass" duration-ms="4181" started-at="2023-07-05T17:29:21 ICT" finished-at="2023-07-05T17:29:26 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_007LoginWithWrongPass -->
-        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.LoginUser@78ac1102]" name="saveAttachment" is-config="true" duration-ms="235" started-at="2023-07-05T17:29:26 ICT" finished-at="2023-07-05T17:29:26 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_007LoginWithWrongPass status=SUCCESS method=LoginUser.TC_007LoginWithWrongPass()[pri:0, instance:Vluong_Day11.LoginUser@78ac1102] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saveAttachment -->
-        <test-method status="PASS" signature="TC_008LoginSuccessfuly()[pri:0, instance:Vluong_Day11.LoginUser@78ac1102]" name="TC_008LoginSuccessfuly" duration-ms="5960" started-at="2023-07-05T17:29:26 ICT" finished-at="2023-07-05T17:29:32 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_008LoginSuccessfuly -->
-        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.LoginUser@78ac1102]" name="saveAttachment" is-config="true" duration-ms="206" started-at="2023-07-05T17:29:32 ICT" finished-at="2023-07-05T17:29:32 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_008LoginSuccessfuly status=SUCCESS method=LoginUser.TC_008LoginSuccessfuly()[pri:0, instance:Vluong_Day11.LoginUser@78ac1102] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saveAttachment -->
-        <test-method status="PASS" signature="TC_009UserCanLogout()[pri:0, instance:Vluong_Day11.LoginUser@78ac1102]" name="TC_009UserCanLogout" duration-ms="14830" started-at="2023-07-05T17:29:32 ICT" finished-at="2023-07-05T17:29:47 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_009UserCanLogout -->
-        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.LoginUser@78ac1102]" name="saveAttachment" is-config="true" duration-ms="210" started-at="2023-07-05T17:29:47 ICT" finished-at="2023-07-05T17:29:47 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_009UserCanLogout status=SUCCESS method=LoginUser.TC_009UserCanLogout()[pri:0, instance:Vluong_Day11.LoginUser@78ac1102] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saveAttachment -->
-      </class> <!-- Vluong_Day11.LoginUser -->
+    <test name="RunCC" duration-ms="53331" started-at="2023-09-13T01:52:13 ICT" finished-at="2023-09-13T01:53:06 ICT">
       <class name="Vluong_Day11.AddCart">
-        <test-method status="PASS" signature="TC_011VerifySubscriptioninCartpage()[pri:0, instance:Vluong_Day11.AddCart@396e2f39]" name="TC_011VerifySubscriptioninCartpage" duration-ms="3825" started-at="2023-07-05T17:30:05 ICT" finished-at="2023-07-05T17:30:08 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_011VerifySubscriptioninCartpage -->
-        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.AddCart@396e2f39]" name="saveAttachment" is-config="true" duration-ms="358" started-at="2023-07-05T17:30:08 ICT" finished-at="2023-07-05T17:30:09 ICT">
+        <test-method status="PASS" signature="Rundriver(java.lang.String,java.lang.String)[pri:0, instance:Vluong_Day11.AddCart@eb21112]" name="Rundriver" is-config="true" duration-ms="9084" started-at="2023-09-13T01:52:13 ICT" finished-at="2023-09-13T01:52:22 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_011VerifySubscriptioninCartpage status=SUCCESS method=AddCart.TC_011VerifySubscriptioninCartpage()[pri:0, instance:Vluong_Day11.AddCart@396e2f39] output={null}]]]>
+                <![CDATA[web]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saveAttachment -->
-        <test-method status="PASS" signature="TC_012VerifyMoreProductsOfTheSametype()[pri:0, instance:Vluong_Day11.AddCart@396e2f39]" name="TC_012VerifyMoreProductsOfTheSametype" duration-ms="2396" started-at="2023-07-05T17:30:09 ICT" finished-at="2023-07-05T17:30:11 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_012VerifyMoreProductsOfTheSametype -->
-        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.AddCart@396e2f39]" name="saveAttachment" is-config="true" duration-ms="347" started-at="2023-07-05T17:30:11 ICT" finished-at="2023-07-05T17:30:12 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_012VerifyMoreProductsOfTheSametype status=SUCCESS method=AddCart.TC_012VerifyMoreProductsOfTheSametype()[pri:0, instance:Vluong_Day11.AddCart@396e2f39] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saveAttachment -->
-        <test-method status="PASS" signature="TC_013VerifyProductsQuantityInCart()[pri:0, instance:Vluong_Day11.AddCart@396e2f39]" name="TC_013VerifyProductsQuantityInCart" duration-ms="3666" started-at="2023-07-05T17:30:12 ICT" finished-at="2023-07-05T17:30:15 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_013VerifyProductsQuantityInCart -->
-        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.AddCart@396e2f39]" name="saveAttachment" is-config="true" duration-ms="199" started-at="2023-07-05T17:30:15 ICT" finished-at="2023-07-05T17:30:15 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_013VerifyProductsQuantityInCart status=SUCCESS method=AddCart.TC_013VerifyProductsQuantityInCart()[pri:0, instance:Vluong_Day11.AddCart@396e2f39] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saveAttachment -->
-        <test-method status="PASS" signature="TC_014VerifyRemoveProductsInCart()[pri:0, instance:Vluong_Day11.AddCart@396e2f39]" name="TC_014VerifyRemoveProductsInCart" duration-ms="5078" started-at="2023-07-05T17:30:15 ICT" finished-at="2023-07-05T17:30:20 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_014VerifyRemoveProductsInCart -->
-        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.AddCart@396e2f39]" name="saveAttachment" is-config="true" duration-ms="202" started-at="2023-07-05T17:30:20 ICT" finished-at="2023-07-05T17:30:21 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_014VerifyRemoveProductsInCart status=SUCCESS method=AddCart.TC_014VerifyRemoveProductsInCart()[pri:0, instance:Vluong_Day11.AddCart@396e2f39] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saveAttachment -->
-        <test-method status="PASS" signature="TC_015VerifyCheckOutInCart()[pri:0, instance:Vluong_Day11.AddCart@396e2f39]" name="TC_015VerifyCheckOutInCart" duration-ms="15286" started-at="2023-07-05T17:30:21 ICT" finished-at="2023-07-05T17:30:36 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_015VerifyCheckOutInCart -->
-        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.AddCart@396e2f39]" name="saveAttachment" is-config="true" duration-ms="217" started-at="2023-07-05T17:30:36 ICT" finished-at="2023-07-05T17:30:36 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_015VerifyCheckOutInCart status=SUCCESS method=AddCart.TC_015VerifyCheckOutInCart()[pri:0, instance:Vluong_Day11.AddCart@396e2f39] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saveAttachment -->
-      </class> <!-- Vluong_Day11.AddCart -->
-      <class name="Vluong_Day11.RegisterUser">
-        <test-method status="PASS" signature="Rundriver(java.lang.String)[pri:0, instance:Vluong_Day11.RegisterUser@c81cdd1]" name="Rundriver" is-config="true" duration-ms="9182" started-at="2023-07-05T17:28:25 ICT" finished-at="2023-07-05T17:28:34 ICT">
-          <params>
-            <param index="0">
+            <param index="1">
               <value>
                 <![CDATA[Chrome]]>
               </value>
@@ -219,41 +23,270 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Rundriver -->
-        <test-method status="PASS" signature="TC_001RegisterNewUser()[pri:0, instance:Vluong_Day11.RegisterUser@c81cdd1]" name="TC_001RegisterNewUser" duration-ms="21992" started-at="2023-07-05T17:28:34 ICT" finished-at="2023-07-05T17:28:56 ICT">
+        <test-method status="PASS" signature="TC_011VerifySubscriptioninCartpage()[pri:0, instance:Vluong_Day11.AddCart@eb21112]" name="TC_011VerifySubscriptioninCartpage" duration-ms="4104" started-at="2023-09-13T01:52:22 ICT" finished-at="2023-09-13T01:52:26 ICT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_001RegisterNewUser -->
-        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.RegisterUser@c81cdd1]" name="saveAttachment" is-config="true" duration-ms="456" started-at="2023-07-05T17:28:56 ICT" finished-at="2023-07-05T17:28:57 ICT">
+        </test-method> <!-- TC_011VerifySubscriptioninCartpage -->
+        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.AddCart@eb21112]" name="saveAttachment" is-config="true" duration-ms="608" started-at="2023-09-13T01:52:26 ICT" finished-at="2023-09-13T01:52:27 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_001RegisterNewUser status=SUCCESS method=RegisterUser.TC_001RegisterNewUser()[pri:0, instance:Vluong_Day11.RegisterUser@c81cdd1] output={null}]]]>
+                <![CDATA[[TestResult name=TC_011VerifySubscriptioninCartpage status=SUCCESS method=AddCart.TC_011VerifySubscriptioninCartpage()[pri:0, instance:Vluong_Day11.AddCart@eb21112] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- saveAttachment -->
-        <test-method status="PASS" signature="TC_002RegisterNewUserWithExistingEmail()[pri:0, instance:Vluong_Day11.RegisterUser@c81cdd1]" name="TC_002RegisterNewUserWithExistingEmail" duration-ms="6381" started-at="2023-07-05T17:28:57 ICT" finished-at="2023-07-05T17:29:03 ICT">
+        <test-method status="PASS" signature="TC_012VerifyMoreProductsOfTheSametype()[pri:0, instance:Vluong_Day11.AddCart@eb21112]" name="TC_012VerifyMoreProductsOfTheSametype" duration-ms="6929" started-at="2023-09-13T01:52:27 ICT" finished-at="2023-09-13T01:52:34 ICT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_002RegisterNewUserWithExistingEmail -->
-        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.RegisterUser@c81cdd1]" name="saveAttachment" is-config="true" duration-ms="217" started-at="2023-07-05T17:29:03 ICT" finished-at="2023-07-05T17:29:03 ICT">
+        </test-method> <!-- TC_012VerifyMoreProductsOfTheSametype -->
+        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.AddCart@eb21112]" name="saveAttachment" is-config="true" duration-ms="356" started-at="2023-09-13T01:52:34 ICT" finished-at="2023-09-13T01:52:34 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_002RegisterNewUserWithExistingEmail status=SUCCESS method=RegisterUser.TC_002RegisterNewUserWithExistingEmail()[pri:0, instance:Vluong_Day11.RegisterUser@c81cdd1] output={null}]]]>
+                <![CDATA[[TestResult name=TC_012VerifyMoreProductsOfTheSametype status=SUCCESS method=AddCart.TC_012VerifyMoreProductsOfTheSametype()[pri:0, instance:Vluong_Day11.AddCart@eb21112] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- saveAttachment -->
-        <test-method status="PASS" signature="AfterRun()[pri:0, instance:Vluong_Day11.RegisterUser@c81cdd1]" name="AfterRun" is-config="true" duration-ms="1459" started-at="2023-07-05T17:30:36 ICT" finished-at="2023-07-05T17:30:38 ICT">
+        <test-method status="PASS" signature="TC_013VerifyProductsQuantityInCart()[pri:0, instance:Vluong_Day11.AddCart@eb21112]" name="TC_013VerifyProductsQuantityInCart" duration-ms="8650" started-at="2023-09-13T01:52:34 ICT" finished-at="2023-09-13T01:52:43 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_013VerifyProductsQuantityInCart -->
+        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.AddCart@eb21112]" name="saveAttachment" is-config="true" duration-ms="360" started-at="2023-09-13T01:52:43 ICT" finished-at="2023-09-13T01:52:43 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_013VerifyProductsQuantityInCart status=SUCCESS method=AddCart.TC_013VerifyProductsQuantityInCart()[pri:0, instance:Vluong_Day11.AddCart@eb21112] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveAttachment -->
+        <test-method status="PASS" signature="TC_014VerifyRemoveProductsInCart()[pri:0, instance:Vluong_Day11.AddCart@eb21112]" name="TC_014VerifyRemoveProductsInCart" duration-ms="8496" started-at="2023-09-13T01:52:43 ICT" finished-at="2023-09-13T01:52:52 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_014VerifyRemoveProductsInCart -->
+        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.AddCart@eb21112]" name="saveAttachment" is-config="true" duration-ms="221" started-at="2023-09-13T01:52:52 ICT" finished-at="2023-09-13T01:52:52 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_014VerifyRemoveProductsInCart status=SUCCESS method=AddCart.TC_014VerifyRemoveProductsInCart()[pri:0, instance:Vluong_Day11.AddCart@eb21112] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveAttachment -->
+        <test-method status="PASS" signature="TC_015VerifyCheckOutInCart()[pri:0, instance:Vluong_Day11.AddCart@eb21112]" name="TC_015VerifyCheckOutInCart" duration-ms="14028" started-at="2023-09-13T01:52:52 ICT" finished-at="2023-09-13T01:53:06 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_015VerifyCheckOutInCart -->
+        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.AddCart@eb21112]" name="saveAttachment" is-config="true" duration-ms="214" started-at="2023-09-13T01:53:06 ICT" finished-at="2023-09-13T01:53:06 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_015VerifyCheckOutInCart status=SUCCESS method=AddCart.TC_015VerifyCheckOutInCart()[pri:0, instance:Vluong_Day11.AddCart@eb21112] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveAttachment -->
+        <test-method status="PASS" signature="mini()[pri:0, instance:Vluong_Day11.AddCart@eb21112]" name="mini" is-config="true" duration-ms="253" started-at="2023-09-13T01:53:06 ICT" finished-at="2023-09-13T01:53:06 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mini -->
+      </class> <!-- Vluong_Day11.AddCart -->
+    </test> <!-- RunCC -->
+    <test name="RunMobile" duration-ms="30289" started-at="2023-09-13T01:53:06 ICT" finished-at="2023-09-13T01:53:37 ICT">
+      <class name="Vluong_Day11.Appium_Action">
+        <test-method status="PASS" signature="initReport()[pri:0, instance:Vluong_Day11.Appium_Action@1f021e6c]" name="initReport" is-config="true" duration-ms="170" started-at="2023-09-13T01:52:13 ICT" finished-at="2023-09-13T01:52:13 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initReport -->
+        <test-method status="PASS" signature="Rundriver(java.lang.String,java.lang.String)[pri:0, instance:Vluong_Day11.Appium_Action@1f021e6c]" name="Rundriver" is-config="true" duration-ms="30203" started-at="2023-09-13T01:53:06 ICT" finished-at="2023-09-13T01:53:37 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mobile]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Rundriver -->
+        <test-method status="FAIL" signature="DemoApp()[pri:0, instance:Vluong_Day11.Appium_Action@1f021e6c]" name="DemoApp" duration-ms="1" started-at="2023-09-13T01:53:37 ICT" finished-at="2023-09-13T01:53:37 ICT">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at Commons.CommonFunc.element_click(CommonFunc.java:42)
+at baseObjects.App_Appium.clickbtnAccess(App_Appium.java:36)
+at Vluong_Day11.Appium_Action.DemoApp(Appium_Action.java:18)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DemoApp -->
+        <test-method status="FAIL" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.Appium_Action@1f021e6c]" name="saveAttachment" is-config="true" duration-ms="1" started-at="2023-09-13T01:53:37 ICT" finished-at="2023-09-13T01:53:37 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DemoApp status=FAILURE method=Appium_Action.DemoApp()[pri:0, instance:Vluong_Day11.Appium_Action@1f021e6c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at Commons.CommonService.screenShot(CommonService.java:138)
+at Commons.CommonService.saveAttachment(CommonService.java:172)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveAttachment -->
+        <test-method status="FAIL" signature="mini()[pri:0, instance:Vluong_Day11.Appium_Action@1f021e6c]" name="mini" is-config="true" duration-ms="79" started-at="2023-09-13T01:53:37 ICT" finished-at="2023-09-13T01:53:37 ICT">
+          <exception class="org.openqa.selenium.UnsupportedCommandException">
+            <message>
+              <![CDATA[The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_381'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [8b0344bc-bbed-4c77-be18-419fd78f9053, minimizeCurrentWindow {}]
+Capabilities {appium:app: D:\Automation Selenium\Demo..., appium:appActivity: io.appium.android.apis.ApiD..., appium:appPackage: io.appium.android.apis, appium:databaseEnabled: false, appium:desired: {app: D:\Automation Selenium\Demo..., appActivity: io.appium.android.apis.ApiD..., appPackage: io.appium.android.apis, deviceName: 435da4f5, fullReset: true, noReset: false, platformName: ANDROID, resetKeyboard: true, udid: 435da4f5, unicodeKeyboard: true}, appium:deviceApiLevel: 26, appium:deviceManufacturer: samsung, appium:deviceModel: SM-G930U, appium:deviceName: 435da4f5, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: 435da4f5, appium:fullReset: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 3, appium:platformVersion: 8.0.0, appium:resetKeyboard: true, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 435da4f5, appium:unicodeKeyboard: true, appium:viewportRect: {height: 1848, left: 0, top: 72, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 8b0344bc-bbed-4c77-be18-419fd78f9053]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnsupportedCommandException: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_381'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [8b0344bc-bbed-4c77-be18-419fd78f9053, minimizeCurrentWindow {}]
+Capabilities {appium:app: D:\Automation Selenium\Demo..., appium:appActivity: io.appium.android.apis.ApiD..., appium:appPackage: io.appium.android.apis, appium:databaseEnabled: false, appium:desired: {app: D:\Automation Selenium\Demo..., appActivity: io.appium.android.apis.ApiD..., appPackage: io.appium.android.apis, deviceName: 435da4f5, fullReset: true, noReset: false, platformName: ANDROID, resetKeyboard: true, udid: 435da4f5, unicodeKeyboard: true}, appium:deviceApiLevel: 26, appium:deviceManufacturer: samsung, appium:deviceModel: SM-G930U, appium:deviceName: 435da4f5, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: 435da4f5, appium:fullReset: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 3, appium:platformVersion: 8.0.0, appium:resetKeyboard: true, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 435da4f5, appium:unicodeKeyboard: true, appium:viewportRect: {height: 1848, left: 0, top: 72, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 8b0344bc-bbed-4c77-be18-419fd78f9053
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:272)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.minimize(RemoteWebDriver.java:1067)
+at Commons.CommonService.mini(CommonService.java:198)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.afterRun(TestRunner.java:877)
+at org.testng.TestRunner.run(TestRunner.java:599)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnsupportedCommandException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mini -->
+        <test-method status="SKIP" signature="AfterRun()[pri:0, instance:Vluong_Day11.Appium_Action@1f021e6c]" name="AfterRun" is-config="true" duration-ms="-1694544817123" started-at="2023-09-13T01:53:37 ICT" finished-at="1970-01-01T07:00:00 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterRun -->
-      </class> <!-- Vluong_Day11.RegisterUser -->
-    </test> <!-- RunCC -->
+      </class> <!-- Vluong_Day11.Appium_Action -->
+    </test> <!-- RunMobile -->
   </suite> <!-- Suite1 -->
 </testng-results>
