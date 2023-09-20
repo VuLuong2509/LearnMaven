@@ -219,6 +219,11 @@ public class Page_Register {
 			}
 			
 			public void Wait_Ele() {
-				func.Wait_ele(local_driver);
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
 }

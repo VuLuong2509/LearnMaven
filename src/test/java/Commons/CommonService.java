@@ -42,12 +42,17 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.remote.MobilePlatform;
+import io.appium.java_client.service.local.AppiumDriverLocalService;
+import io.appium.java_client.service.local.AppiumServiceBuilder;
 
 public class CommonService {
-	public static AndroidDriver mddriver = null;
+//	public static AndroidDriver mddriver = null;
+	public static AndroidDriver<WebElement> mddriver = null;
 	public static WebDriver driver = null;
 	public static ExtentReports extent;
 	public static ExtentTest test = null;
+	protected static AppiumDriverLocalService service;
+	DesiredCapabilities dc;
 	
 	
 	@BeforeSuite
@@ -58,14 +63,17 @@ public class CommonService {
 	}
 
 	@BeforeTest
-	@Parameters({"platform", "browser"})
-	public void Rundriver(String platform, String browser) {
+	@Parameters({"platform", "browser", "portno", "devicename"})
+	public void Rundriver(String platform, String browser, String portno, String devicename) {
 		
 		if (platform.equalsIgnoreCase("mobile")) {
 			DesiredCapabilities dc = new DesiredCapabilities();
 			dc.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.ANDROID);
-			dc.setCapability(MobileCapabilityType.DEVICE_NAME, "435da4f5");
-			dc.setCapability(MobileCapabilityType.UDID, "435da4f5");
+//			dc.setCapability(MobileCapabilityType.DEVICE_NAME, "435da4f5");
+//			dc.setCapability(MobileCapabilityType.UDID, "435da4f5");
+			dc.setCapability(MobileCapabilityType.DEVICE_NAME, devicename);
+			dc.setCapability(MobileCapabilityType.UDID, devicename);
+			
 			dc.setCapability("unicodeKeyboard", "true");
 			dc.setCapability("resetKeyboard", "true");
 					
@@ -77,13 +85,14 @@ public class CommonService {
 			dc.setCapability("appActivity", "io.appium.android.apis.ApiDemos");
 			
 			try {
-				driver = new AndroidDriver( new URL("http://127.0.0.1:4723/wd/hub") , dc);
-							
+//				mddriver = new AndroidDriver( new URL("http://127.0.0.1:4723/wd/hub") , dc);
+				service = AppiumDriverLocalService.buildService(new AppiumServiceBuilder().withLogFile(new File(System.getProperty("user.dir")+"/" +portno+ "_log.txt")).usingPort(Integer.parseInt(portno)));
+				service.start();
 				
+				String newURL = service.getUrl().toString();
+				System.out.println("NEW URL: "+ newURL);
+				mddriver = new AndroidDriver<WebElement>(service.getUrl(),dc);
 				Thread.sleep(10000);
-			} catch (MalformedURLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -101,7 +110,7 @@ public class CommonService {
 				driver = new FirefoxDriver();
 			} else{
 				EdgeOptions option = new EdgeOptions();
-				option.addArguments("--remote-allow-origins=*");
+//				option.addArguments("--remote-allow-origins=*");
 				driver = new EdgeDriver();
 			}
 			
@@ -192,12 +201,12 @@ public class CommonService {
 		extent.flush();
 	}
 	
-	@AfterTest
-	public void mini() {
-		if(driver!=null) {
-			driver.manage().window().minimize();
-		}
-	}
+//	@AfterTest
+//	public void mini() {
+//		if(driver!=null) {
+//			driver.manage().window().minimize();
+//		}
+//	}
 	@AfterSuite
 	public void AfterRun() {
 		if (driver!=null) {

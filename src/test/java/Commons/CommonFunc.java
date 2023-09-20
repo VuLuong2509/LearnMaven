@@ -36,7 +36,8 @@ public class CommonFunc {
 		WebElement btn = null;
 		
 		if (driver instanceof AndroidDriver) {
-			btn = ((AndroidDriver) driver).findElement(By.xpath(xpath));
+			btn = ((AndroidDriver<WebElement>) driver).findElement(By.xpath(xpath));
+	
 			test.info("Click btn"+xpath);
 		} else {
 			btn = ((WebDriver)driver).findElement(By.xpath(xpath));
@@ -92,9 +93,9 @@ public class CommonFunc {
 	      });
 	}
 	
-	public void Wait_ele(WebDriver driver) {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(45));
-	}
+//	public void Wait_ele(WebDriver driver) {
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(45));
+//	}
 
 
 }

@@ -2,7 +2,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
   <test thread-count="5" name="RunMobile(failed)">
+    <parameter name="portno" value="4735"/>
     <parameter name="browser" value="Chrome"/>
+    <parameter name="devicename" value="435da4f5"/>
     <parameter name="platform" value="mobile"/>
     <classes>
       <class name="Vluong_Day11.Appium_Action">
@@ -12,7 +14,6 @@
           <include name="initReport"/>
           <include name="Rundriver"/>
           <include name="AfterRun"/>
-          <include name="mini"/>
         </methods>
       </class> <!-- Vluong_Day11.Appium_Action -->
     </classes>

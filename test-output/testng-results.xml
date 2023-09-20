@@ -1,116 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="83630" started-at="2023-09-13T01:52:13 ICT" finished-at="2023-09-13T01:53:37 ICT">
+  <suite name="Suite1" duration-ms="65434" started-at="2023-09-20T18:32:25 ICT" finished-at="2023-09-20T18:33:30 ICT">
     <groups>
     </groups>
-    <test name="RunCC" duration-ms="53331" started-at="2023-09-13T01:52:13 ICT" finished-at="2023-09-13T01:53:06 ICT">
-      <class name="Vluong_Day11.AddCart">
-        <test-method status="PASS" signature="Rundriver(java.lang.String,java.lang.String)[pri:0, instance:Vluong_Day11.AddCart@eb21112]" name="Rundriver" is-config="true" duration-ms="9084" started-at="2023-09-13T01:52:13 ICT" finished-at="2023-09-13T01:52:22 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[web]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Rundriver -->
-        <test-method status="PASS" signature="TC_011VerifySubscriptioninCartpage()[pri:0, instance:Vluong_Day11.AddCart@eb21112]" name="TC_011VerifySubscriptioninCartpage" duration-ms="4104" started-at="2023-09-13T01:52:22 ICT" finished-at="2023-09-13T01:52:26 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_011VerifySubscriptioninCartpage -->
-        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.AddCart@eb21112]" name="saveAttachment" is-config="true" duration-ms="608" started-at="2023-09-13T01:52:26 ICT" finished-at="2023-09-13T01:52:27 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_011VerifySubscriptioninCartpage status=SUCCESS method=AddCart.TC_011VerifySubscriptioninCartpage()[pri:0, instance:Vluong_Day11.AddCart@eb21112] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saveAttachment -->
-        <test-method status="PASS" signature="TC_012VerifyMoreProductsOfTheSametype()[pri:0, instance:Vluong_Day11.AddCart@eb21112]" name="TC_012VerifyMoreProductsOfTheSametype" duration-ms="6929" started-at="2023-09-13T01:52:27 ICT" finished-at="2023-09-13T01:52:34 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_012VerifyMoreProductsOfTheSametype -->
-        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.AddCart@eb21112]" name="saveAttachment" is-config="true" duration-ms="356" started-at="2023-09-13T01:52:34 ICT" finished-at="2023-09-13T01:52:34 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_012VerifyMoreProductsOfTheSametype status=SUCCESS method=AddCart.TC_012VerifyMoreProductsOfTheSametype()[pri:0, instance:Vluong_Day11.AddCart@eb21112] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saveAttachment -->
-        <test-method status="PASS" signature="TC_013VerifyProductsQuantityInCart()[pri:0, instance:Vluong_Day11.AddCart@eb21112]" name="TC_013VerifyProductsQuantityInCart" duration-ms="8650" started-at="2023-09-13T01:52:34 ICT" finished-at="2023-09-13T01:52:43 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_013VerifyProductsQuantityInCart -->
-        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.AddCart@eb21112]" name="saveAttachment" is-config="true" duration-ms="360" started-at="2023-09-13T01:52:43 ICT" finished-at="2023-09-13T01:52:43 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_013VerifyProductsQuantityInCart status=SUCCESS method=AddCart.TC_013VerifyProductsQuantityInCart()[pri:0, instance:Vluong_Day11.AddCart@eb21112] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saveAttachment -->
-        <test-method status="PASS" signature="TC_014VerifyRemoveProductsInCart()[pri:0, instance:Vluong_Day11.AddCart@eb21112]" name="TC_014VerifyRemoveProductsInCart" duration-ms="8496" started-at="2023-09-13T01:52:43 ICT" finished-at="2023-09-13T01:52:52 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_014VerifyRemoveProductsInCart -->
-        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.AddCart@eb21112]" name="saveAttachment" is-config="true" duration-ms="221" started-at="2023-09-13T01:52:52 ICT" finished-at="2023-09-13T01:52:52 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_014VerifyRemoveProductsInCart status=SUCCESS method=AddCart.TC_014VerifyRemoveProductsInCart()[pri:0, instance:Vluong_Day11.AddCart@eb21112] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saveAttachment -->
-        <test-method status="PASS" signature="TC_015VerifyCheckOutInCart()[pri:0, instance:Vluong_Day11.AddCart@eb21112]" name="TC_015VerifyCheckOutInCart" duration-ms="14028" started-at="2023-09-13T01:52:52 ICT" finished-at="2023-09-13T01:53:06 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_015VerifyCheckOutInCart -->
-        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.AddCart@eb21112]" name="saveAttachment" is-config="true" duration-ms="214" started-at="2023-09-13T01:53:06 ICT" finished-at="2023-09-13T01:53:06 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_015VerifyCheckOutInCart status=SUCCESS method=AddCart.TC_015VerifyCheckOutInCart()[pri:0, instance:Vluong_Day11.AddCart@eb21112] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saveAttachment -->
-        <test-method status="PASS" signature="mini()[pri:0, instance:Vluong_Day11.AddCart@eb21112]" name="mini" is-config="true" duration-ms="253" started-at="2023-09-13T01:53:06 ICT" finished-at="2023-09-13T01:53:06 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mini -->
-      </class> <!-- Vluong_Day11.AddCart -->
-    </test> <!-- RunCC -->
-    <test name="RunMobile" duration-ms="30289" started-at="2023-09-13T01:53:06 ICT" finished-at="2023-09-13T01:53:37 ICT">
+    <test name="RunMobile" duration-ms="31187" started-at="2023-09-20T18:32:25 ICT" finished-at="2023-09-20T18:32:56 ICT">
       <class name="Vluong_Day11.Appium_Action">
-        <test-method status="PASS" signature="initReport()[pri:0, instance:Vluong_Day11.Appium_Action@1f021e6c]" name="initReport" is-config="true" duration-ms="170" started-at="2023-09-13T01:52:13 ICT" finished-at="2023-09-13T01:52:13 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initReport -->
-        <test-method status="PASS" signature="Rundriver(java.lang.String,java.lang.String)[pri:0, instance:Vluong_Day11.Appium_Action@1f021e6c]" name="Rundriver" is-config="true" duration-ms="30203" started-at="2023-09-13T01:53:06 ICT" finished-at="2023-09-13T01:53:37 ICT">
+        <test-method status="PASS" signature="Rundriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Vluong_Day11.Appium_Action@553a3d88]" name="Rundriver" is-config="true" duration-ms="27075" started-at="2023-09-20T18:32:25 ICT" finished-at="2023-09-20T18:32:52 ICT">
           <params>
             <param index="0">
               <value>
@@ -122,171 +19,89 @@
                 <![CDATA[Chrome]]>
               </value>
             </param>
+            <param index="2">
+              <value>
+                <![CDATA[4737]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[435da4f5]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Rundriver -->
-        <test-method status="FAIL" signature="DemoApp()[pri:0, instance:Vluong_Day11.Appium_Action@1f021e6c]" name="DemoApp" duration-ms="1" started-at="2023-09-13T01:53:37 ICT" finished-at="2023-09-13T01:53:37 ICT">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at Commons.CommonFunc.element_click(CommonFunc.java:42)
-at baseObjects.App_Appium.clickbtnAccess(App_Appium.java:36)
-at Vluong_Day11.Appium_Action.DemoApp(Appium_Action.java:18)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="DemoApp()[pri:0, instance:Vluong_Day11.Appium_Action@553a3d88]" name="DemoApp" duration-ms="3574" started-at="2023-09-20T18:32:52 ICT" finished-at="2023-09-20T18:32:56 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DemoApp -->
-        <test-method status="FAIL" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.Appium_Action@1f021e6c]" name="saveAttachment" is-config="true" duration-ms="1" started-at="2023-09-13T01:53:37 ICT" finished-at="2023-09-13T01:53:37 ICT">
+        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.Appium_Action@553a3d88]" name="saveAttachment" is-config="true" duration-ms="520" started-at="2023-09-20T18:32:56 ICT" finished-at="2023-09-20T18:32:56 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=DemoApp status=FAILURE method=Appium_Action.DemoApp()[pri:0, instance:Vluong_Day11.Appium_Action@1f021e6c] output={null}]]]>
+                <![CDATA[[TestResult name=DemoApp status=SUCCESS method=Appium_Action.DemoApp()[pri:0, instance:Vluong_Day11.Appium_Action@553a3d88] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at Commons.CommonService.screenShot(CommonService.java:138)
-at Commons.CommonService.saveAttachment(CommonService.java:172)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- saveAttachment -->
-        <test-method status="FAIL" signature="mini()[pri:0, instance:Vluong_Day11.Appium_Action@1f021e6c]" name="mini" is-config="true" duration-ms="79" started-at="2023-09-13T01:53:37 ICT" finished-at="2023-09-13T01:53:37 ICT">
-          <exception class="org.openqa.selenium.UnsupportedCommandException">
-            <message>
-              <![CDATA[The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
-Build info: version: '4.12.1', revision: '8e34639b11'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_381'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [8b0344bc-bbed-4c77-be18-419fd78f9053, minimizeCurrentWindow {}]
-Capabilities {appium:app: D:\Automation Selenium\Demo..., appium:appActivity: io.appium.android.apis.ApiD..., appium:appPackage: io.appium.android.apis, appium:databaseEnabled: false, appium:desired: {app: D:\Automation Selenium\Demo..., appActivity: io.appium.android.apis.ApiD..., appPackage: io.appium.android.apis, deviceName: 435da4f5, fullReset: true, noReset: false, platformName: ANDROID, resetKeyboard: true, udid: 435da4f5, unicodeKeyboard: true}, appium:deviceApiLevel: 26, appium:deviceManufacturer: samsung, appium:deviceModel: SM-G930U, appium:deviceName: 435da4f5, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: 435da4f5, appium:fullReset: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 3, appium:platformVersion: 8.0.0, appium:resetKeyboard: true, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 435da4f5, appium:unicodeKeyboard: true, appium:viewportRect: {height: 1848, left: 0, top: 72, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 8b0344bc-bbed-4c77-be18-419fd78f9053]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnsupportedCommandException: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
-Build info: version: '4.12.1', revision: '8e34639b11'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_381'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [8b0344bc-bbed-4c77-be18-419fd78f9053, minimizeCurrentWindow {}]
-Capabilities {appium:app: D:\Automation Selenium\Demo..., appium:appActivity: io.appium.android.apis.ApiD..., appium:appPackage: io.appium.android.apis, appium:databaseEnabled: false, appium:desired: {app: D:\Automation Selenium\Demo..., appActivity: io.appium.android.apis.ApiD..., appPackage: io.appium.android.apis, deviceName: 435da4f5, fullReset: true, noReset: false, platformName: ANDROID, resetKeyboard: true, udid: 435da4f5, unicodeKeyboard: true}, appium:deviceApiLevel: 26, appium:deviceManufacturer: samsung, appium:deviceModel: SM-G930U, appium:deviceName: 435da4f5, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: 435da4f5, appium:fullReset: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 3, appium:platformVersion: 8.0.0, appium:resetKeyboard: true, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 435da4f5, appium:unicodeKeyboard: true, appium:viewportRect: {height: 1848, left: 0, top: 72, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 8b0344bc-bbed-4c77-be18-419fd78f9053
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:272)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.minimize(RemoteWebDriver.java:1067)
-at Commons.CommonService.mini(CommonService.java:198)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.afterRun(TestRunner.java:877)
-at org.testng.TestRunner.run(TestRunner.java:599)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnsupportedCommandException -->
+      </class> <!-- Vluong_Day11.Appium_Action -->
+    </test> <!-- RunMobile -->
+    <test name="RunMobile1" duration-ms="34238" started-at="2023-09-20T18:32:56 ICT" finished-at="2023-09-20T18:33:30 ICT">
+      <class name="Vluong_Day11.Appium_Action">
+        <test-method status="PASS" signature="initReport()[pri:0, instance:Vluong_Day11.Appium_Action@10a035a0]" name="initReport" is-config="true" duration-ms="162" started-at="2023-09-20T18:32:25 ICT" finished-at="2023-09-20T18:32:25 ICT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mini -->
-        <test-method status="SKIP" signature="AfterRun()[pri:0, instance:Vluong_Day11.Appium_Action@1f021e6c]" name="AfterRun" is-config="true" duration-ms="-1694544817123" started-at="2023-09-13T01:53:37 ICT" finished-at="1970-01-01T07:00:00 ICT">
+        </test-method> <!-- initReport -->
+        <test-method status="PASS" signature="Rundriver(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Vluong_Day11.Appium_Action@10a035a0]" name="Rundriver" is-config="true" duration-ms="30743" started-at="2023-09-20T18:32:56 ICT" finished-at="2023-09-20T18:33:27 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mobile]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4738]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[127.0.0.1:5555]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Rundriver -->
+        <test-method status="PASS" signature="DemoApp()[pri:0, instance:Vluong_Day11.Appium_Action@10a035a0]" name="DemoApp" duration-ms="2988" started-at="2023-09-20T18:33:27 ICT" finished-at="2023-09-20T18:33:30 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DemoApp -->
+        <test-method status="PASS" signature="saveAttachment(org.testng.ITestResult)[pri:0, instance:Vluong_Day11.Appium_Action@10a035a0]" name="saveAttachment" is-config="true" duration-ms="506" started-at="2023-09-20T18:33:30 ICT" finished-at="2023-09-20T18:33:30 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DemoApp status=SUCCESS method=Appium_Action.DemoApp()[pri:0, instance:Vluong_Day11.Appium_Action@10a035a0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveAttachment -->
+        <test-method status="PASS" signature="AfterRun()[pri:0, instance:Vluong_Day11.Appium_Action@10a035a0]" name="AfterRun" is-config="true" duration-ms="2556" started-at="2023-09-20T18:33:30 ICT" finished-at="2023-09-20T18:33:33 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterRun -->
       </class> <!-- Vluong_Day11.Appium_Action -->
-    </test> <!-- RunMobile -->
+    </test> <!-- RunMobile1 -->
   </suite> <!-- Suite1 -->
 </testng-results>
